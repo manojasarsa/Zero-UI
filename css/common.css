@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap');
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Outlined");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Round");
+
+:root {
+    --prim-color: #272727;
+    --sec-color: #ff3f6c;
+    --light-pink: #ff6589;
+    --white: #fff;
+    --shadow: #f3f4f6;
+    --light-grey: #6b7280;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto' , sans-serif;
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+ul[role='list'],
+ol[role='list'], li{
+  list-style: none;
+}
+
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+    text-decoration: none;
+}
+    
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  color: var(--prim-color);
+}
