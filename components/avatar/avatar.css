@@ -1,0 +1,78 @@
+@import url("/docs/main.css");
+
+.avatar_container {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    min-width: fit-content;
+    margin: 2rem auto;    
+    padding: 1.5rem 0rem;
+    justify-content: flex-start;
+    border-bottom: 1px solid var(--line);
+    flex-wrap: wrap;
+    overflow: auto;
+}
+
+.avatar_head {
+    font-size: 1.5rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--line);
+}
+
+.avatar_desc {
+    margin: 2rem 4rem;
+    font-size: 1rem;
+    color: var(--light-grey);
+    font-weight: 400;
+}
+
+.avatar_main iframe {
+    max-width: 100%;
+    display: inline-block;
+    margin: 1.2rem 0rem;
+}
+
+.avatar {
+    border-radius: 50%;
+    height: 8em;
+    width: 8em;
+    object-fit: cover;
+    display: inline-block;
+    margin-left: 2rem;
+}
+
+.avatar_lg {
+    height: 10em;
+    width: 10em;
+}
+
+.avatar_md {
+    height: 7em;
+    width: 7em;
+}
+
+.avatar_sm {
+    height: 4em;
+    width: 4em;
+}
+
+.avatar_xs {
+    height: 2.5em;
+    width: 2.5em;
+}
+
+.avatar_sizes {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    column-gap: 1.5rem;
+}
+
+.avatar_profile {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 1.5rem;
+}
+
+
