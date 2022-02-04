@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/components/avatar/avatar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/docs/main.css">
+    <script src="https://kit.fontawesome.com/b2c3fdb829.js" crossorigin="anonymous"></script>
+    <title>Avatar</title>
+</head>
+
+<body>
+
+    <!-- Nav Bar -->
+
+    <nav class="nav">
+        <div class="nav_container">
+            <a class="nav_heading" href="/">Zero<span class="span">+</span>1 UI</a>
+            <div class="nav_list_container">
+                <ul class="nav_list">
+                    <li class="nav_list_icons">
+                        <a class="nav_icons" target="_blank" href="https://github.com/manojasarsa"><i
+                                class="fab fa-github fa-2x"></i></a>
+                    </li>
+                    <li class="nav_list_icons">
+                        <a class="nav_icons" target="_blank" href="https://www.linkedin.com/in/manoj-asarsa"><i
+                                class="fab fa-linkedin fa-2x"></i></a>
+                    </li>
+                    <li class="nav_list_icons">
+                        <a class="nav_icons" target="_blank" href="https://twitter.com/manoj_asarsa"><i
+                                class="fab fa-twitter fa-2x"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="doc_sidebar">
+        <div class="doc_heading">Getting Started</div>
+        <div class="doc_sidebar_list">
+            <a class="doc_comp_link" href="">Installation</a>
+        </div>
+        <div class="doc_heading">Components</div>
+        <ul>
+            <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/avatar/avatar.html">Avatar</a></li>
+            <li class="doc_sidebar_list"><a class="doc_comp_link" href="">Alert</a></li>
+            <li class="doc_sidebar_list"><a class="doc_comp_link" href="">Badge</a></li>
+            <li class="doc_sidebar_list"><a class="doc_comp_link" href="">Button</a></li>
+            <li class="doc_sidebar_list"><a class="doc_comp_link" href="">Card</a></li>
+            <li class="doc_sidebar_list"><a class="doc_comp_link" href="">Image</a></li>
+            <li class="doc_sidebar_list"><a class="doc_comp_link" href="">Input</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+
+    <div class="doc_content">
+
+        <div class="avatar_container">
+            <h2 class="avatar_head">Avatar</h2>
+            <p class="avatar_desc">
+                The Avatar component is used to represent a user profile pictures on profile information page, on
+                navigation
+                bar, in blogs grid items. They usually found in circular shapes.
+            </p>
+            <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Cascadia+Code&fs=13.5px&lh=146%25&si=false&es=2x&wm=false&code=%2540import%2520url%28%2522https%253A%252F%252Fzero-ui.netlify.app%252Fcomponents%252Favatar%252Favatar.css%2522%29%253B%250A%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fzero-ui.netlify.app%252Fcomponents%252Favatar%252Favatar.css%2522%250A%253E%250A"
+                style="width: 80vw; height: 30vh; border:0; transform: scale(1); overflow:hidden;"
+                sandbox="allow-scripts allow-same-origin">
+            </iframe>
+
+            <h2 class="avatar_head">Profile Avatar</h2>
+            <p class="avatar_desc">
+                Profile Avatars can be created using the <span class="span">class 'avatar_image'</span>, inside the img
+                tag.
+            </p>
+            <div class="avatar_profile">
+                <img src="/assets/piercing.jpg" alt="avatar" class="avatar">
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Droid+Sans+Mono&fs=13.5px&lh=146%25&si=false&es=2x&wm=false&code=%253Cimg%2520src%253D%2522...%2522%2520alt%253D%2522...%2522%2520class%253D%2522avatar%2522%253E%250A"
+                    style="width: 40vw; height: 226px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+
+            <h2 class="avatar_head">Sizes</h2>
+            <p class="avatar_desc">
+                Avatar is available in 4 different sizes. You can use image in Avatar. You need to include class avatar
+                and
+                for size add class according to size : <span class="span">avatar-lg, avatar-md, avatar-sm,
+                    avatar-xs</span>
+                (e.g. class="avatar avatar-md")
+            </p>
+            <div class="avatar_sizes">
+                <img src="/assets/hat.jpg" alt="avatar" class="avatar avatar_lg">
+                <img src="/assets/hat.jpg" alt="avatar" class="avatar avatar_md">
+                <img src="/assets/hat.jpg" alt="avatar" class="avatar avatar_sm">
+                <img src="/assets/hat.jpg" alt="avatar" class="avatar avatar_xs">
+            </div>
+            <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=vscode&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Droid+Sans+Mono&fs=13.5px&lh=146%25&si=false&es=2x&wm=false&code=%253Cimg%2520src%253D%2522...%2522%2520class%253D%2522avatar%2520avatar_lg%2522%2520alt%253D%2522...%2522%253E%250A%253Cimg%2520src%253D%2522...%2522%2520class%253D%2522avatar%2520avatar_md%2522%2520alt%253D%2522...%2522%253E%2520%250A%253Cimg%2520src%253D%2522...%2522%2520class%253D%2522avatar%2520avatar_sm%2522%2520alt%253D%2522...%2522%253E%250A%253Cimg%2520src%253D%2522...%2522%2520class%253D%2522avatar%2520avatar_xs%2522%2520alt%253D%2522...%2522%253E%250A"
+                style="width: 100%; height: 285px; border:0; transform: scale(1); overflow:hidden;"
+                sandbox="allow-scripts allow-same-origin">
+            </iframe>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
