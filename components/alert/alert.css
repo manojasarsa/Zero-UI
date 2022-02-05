@@ -1,0 +1,71 @@
+@import url("/docs/main.css");
+
+.alert_container {
+    background-color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    min-width: fit-content;
+    margin: 2rem auto;    
+    padding: 1.5rem 0rem;
+    justify-content: flex-start;
+    border-bottom: 1px solid var(--line-color);
+    flex-wrap: wrap;
+    overflow: auto;
+    text-align: left;
+}
+
+.alert_head {
+    font-size: 1.5rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--line-color);
+}
+
+.alert_desc {
+    margin: 2rem 0;
+    font-size: 1rem;
+    color: var(--light-grey-color);
+    font-weight: 400;
+}
+
+.alert_box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.alert_success {
+    display: flex;
+    margin: 1rem;
+    padding: 1rem;
+    color: var(--success-color);
+    background-color: var(--success-background-color);
+}
+
+.alert_error {
+    display: flex;
+    margin: 1rem;
+    padding: 1rem;
+    color: var(--alert-color);
+    background-color: var(--alert-background-color);
+}
+
+.alert_warning {
+    display: flex;
+    margin: 1rem;
+    padding: 1rem;
+    color: var(--warning-color);
+    background-color: var(--warning-background-color);
+}
+
+.alert_info {
+    display: flex;
+    margin: 1rem;
+    padding: 1rem;
+    color: var(--info-color);
+    background-color: var(--info-background-color);
+}
+
+.alert_box span {
+    margin: 0 0.4rem;
+    font-size: 1.2rem;
+}

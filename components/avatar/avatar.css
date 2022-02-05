@@ -1,35 +1,30 @@
 @import url("/docs/main.css");
 
 .avatar_container {
-    background-color: var(--white);
+    background-color: var(--white-color);
     display: flex;
     flex-direction: column;
     min-width: fit-content;
     margin: 2rem auto;    
     padding: 1.5rem 0rem;
     justify-content: flex-start;
-    border-bottom: 1px solid var(--line);
+    border-bottom: 1px solid var(--line-color);
     flex-wrap: wrap;
     overflow: auto;
+    text-align: left;
 }
 
 .avatar_head {
     font-size: 1.5rem;
     padding-top: 2rem;
-    border-top: 1px solid var(--line);
+    border-top: 1px solid var(--line-color);
 }
 
 .avatar_desc {
-    margin: 2rem 4rem;
+    margin: 2rem 0;
     font-size: 1rem;
-    color: var(--light-grey);
+    color: var(--light-grey-color);
     font-weight: 400;
-}
-
-.avatar_main iframe {
-    max-width: 100%;
-    display: inline-block;
-    margin: 1.2rem 0rem;
 }
 
 .avatar {
@@ -37,28 +32,27 @@
     height: 8em;
     width: 8em;
     object-fit: cover;
-    display: inline-block;
-    margin-left: 2rem;
+    margin: 2rem 0 2rem 2rem;
 }
 
 .avatar_lg {
-    height: 10em;
-    width: 10em;
+    height: 11em;
+    width: 11em;
 }
 
 .avatar_md {
-    height: 7em;
-    width: 7em;
+    height: 8em;
+    width: 8em;
 }
 
 .avatar_sm {
-    height: 4em;
-    width: 4em;
+    height: 5em;
+    width: 5em;
 }
 
 .avatar_xs {
-    height: 2.5em;
-    width: 2.5em;
+    height: 2em;
+    width: 2em;
 }
 
 .avatar_sizes {
@@ -67,12 +61,3 @@
     align-items: flex-end;
     column-gap: 1.5rem;
 }
-
-.avatar_profile {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    column-gap: 1.5rem;
-}
-
-

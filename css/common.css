@@ -4,20 +4,29 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons+Round");
 
 :root {
-    --prim-color: #272727;
-    --sec-color: #ff3f6c;
-    --light-pink: #ff6589;
-    --white: #fff;
-    --shadow: #f3f4f6;
-    --light-grey: #6b7280;
-    --grey: #4b5563;
-    --line: #d1d5db;
+    --primary-color: #272727;
+    --secondary-color: #ff3f6c;
+    --light-pink-color: #ff6589;
+    --success-color: #1b7052;
+    --success-background-color: #84f1c9;
+    --alert-color: #dc3545;
+    --alert-background-color: #fcc5c5;
+    --warning-color: #ff9204;
+    --warning-background-color: #ffe7c5;
+    --info-color: #29438b;
+    --info-background-color: #7fd2e6;
+    --white-color: #fff;
+    --shadow-color: #f3f4f6;
+    --light-grey-color: #6b7280;
+    --grey-color: #4b5563;
+    --line-color: #d1d5db;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    word-wrap: break-word;
 }
 
 html:focus-within {
@@ -55,5 +64,15 @@ select {
 }
 
 h1, h2, h3, h4, h5, h6, p {
-  color: var(--prim-color);
+  color: var(--primary-color);
+}
+
+.display_code {
+  margin: 2rem 0;
+  padding-bottom: 2rem;
+  max-width: 50vw;
+}
+
+.display_code iframe {
+  max-width: 100%;
 }
