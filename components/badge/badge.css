@@ -1,0 +1,66 @@
+@import url("/docs/main.css");
+
+.badge_head {
+    font-size: 1.5rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--line-color);
+}
+
+.badge_desc {
+    margin: 2rem 0;
+    font-size: 1rem;
+    color: var(--light-grey-color);
+    font-weight: 400;
+}
+
+.badge_container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.badge {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 1rem;
+    align-self: flex-end;
+    text-align: center;
+}
+
+.badge_avatar {
+    position: absolute;
+    width: 17%;
+    height: 17%;
+    border-radius: 50%;
+    bottom: 4%;
+    right: 6%;
+}
+
+.badge_avatar.badge_online {
+    background-color: var(--success-color);
+}
+
+.badge_avatar.badge_offline {
+    background-color: var(--warning-color);
+}
+
+.badge_avatar.badge_dnd {
+    background-color: var(--alert-color);
+}
+
+.badge_icon.badge_number {
+    position: absolute;
+    width: 45%;
+    height: 45%;
+    border-radius: 50%;
+    top: 0;
+    right: -10%;
+    font-size: 1em;
+    color: var(--white-color);
+    background-color: var(--secondary-color);
+}
+
+.material-icons-outlined.md-36 {
+    font-size: 56px;
+}

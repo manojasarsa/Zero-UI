@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/components/badge/badge.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/docs/main.css">
+    <script src="https://kit.fontawesome.com/b2c3fdb829.js" crossorigin="anonymous"></script>
+    <title>Badge</title>
+</head>
+
+<body>
+
+    <!-- Nav Bar -->
+
+    <nav class="nav">
+        <div class="nav_container">
+            <a class="nav_heading" href="/">Zero<span class="span">+</span>1 UI</a>
+            <div class="nav_list_container">
+                <ul class="nav_list">
+                    <li class="nav_list_icons">
+                        <a class="nav_icons" target="_blank" href="https://github.com/manojasarsa"><i
+                                class="fab fa-github fa-2x"></i></a>
+                    </li>
+                    <li class="nav_list_icons">
+                        <a class="nav_icons" target="_blank" href="https://www.linkedin.com/in/manoj-asarsa"><i
+                                class="fab fa-linkedin fa-2x"></i></a>
+                    </li>
+                    <li class="nav_list_icons">
+                        <a class="nav_icons" target="_blank" href="https://twitter.com/manoj_asarsa"><i
+                                class="fab fa-twitter fa-2x"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="doc_sidebar">
+        <div class="doc_heading">Getting Started</div>
+        <div class="doc_sidebar_list">
+            <a class="doc_comp_link" href="">Installation</a>
+        </div>
+        <div class="doc_heading">Components</div>
+        <ul>
+            <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/avatar/avatar.html">Avatar</a></li>
+            <li class="doc_sidebar_list"><a class="doc_comp_link" href="">Alert</a></li>
+            <li class="doc_sidebar_list"><a class="doc_comp_link" href="">Badge</a></li>
+            <li class="doc_sidebar_list"><a class="doc_comp_link" href="">Button</a></li>
+            <li class="doc_sidebar_list"><a class="doc_comp_link" href="">Card</a></li>
+            <li class="doc_sidebar_list"><a class="doc_comp_link" href="">Image</a></li>
+            <li class="doc_sidebar_list"><a class="doc_comp_link" href="">Input</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+
+    <div class="doc_content">
+
+        <div class="doc_main_container">
+            <h2 class="badge_head">Badge</h2>
+            <p class="badge_desc">
+                Badges are small circles, positioned either at top-right or bottom-right of the parent component. Badge
+                can be used to display notifications count, online / offline status, depending on where they are used.
+            </p>
+            <div class="display_code">
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=material&wt=none&l=css&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Droid+Sans+Mono&fs=14.5px&lh=147%25&si=false&es=2x&wm=false&code=%253Clink%2520rel%253D%2522stylesheet%2522%2520%250Ahref%253D%2522https%253A%252F%252Fzero-ui.netlify.app%252Fcomponents%252Fbadge%252Fbadge.css%2522%253E"
+                    style="width: 578px; height: 117px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+
+
+            <h2 class="avatar_head">Badges on Avatars</h2>
+            <p class="avatar_desc">
+                It includes Profile Badge that is used to show the current status of a user.
+                It can be used with 3 variants : online | offline | dnd
+            </p>
+
+            <div class="badge_container">
+                <div class="badge">
+                    <img class="avatar avatar_lg" src="/assets/stud.jpg" alt="avatar_large">
+                    <span class="badge_avatar badge_online"></span>
+
+                </div>
+
+                <div class="badge">
+                    <img class="avatar avatar_md" src="/assets/stud.jpg" alt="avatar_medium">
+                    <span class="badge_avatar badge_offline"></span>
+                </div>
+
+                <div class="badge">
+                    <img class="avatar avatar_sm" src="/assets/stud.jpg" alt="avatar_small">
+                    <span class="badge_avatar badge_dnd"></span>
+                </div>
+            </div>
+
+
+            <div class="display_code">
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=material&wt=none&l=css&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Droid+Sans+Mono&fs=14.5px&lh=147%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522badge_container%2522%253E%250A%250A%2509%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2509%2509%253Cimg%2520class%253D%2522avatar%2520avatar_lg%2522%2520src%253D%2522%252Fassets%252Fstud.jpg%2522%2520alt%253D%2522avatar_large%2522%253E%250A%2509%2509%253Cspan%2520class%253D%2522badge_avatar%2520badge_online%2522%253E%253C%252Fspan%253E%250A%2509%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2520%2520%2520%2520%2509%253Cimg%2520class%253D%2522avatar%2520avatar_md%2522%2520src%253D%2522%252Fassets%252Fstud.jpg%2522%2520alt%253D%2522avatar_medium%2522%253E%250A%2520%2520%2520%2520%2509%253Cspan%2520class%253D%2522badge_avatar%2520badge_offline%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2520%2520%2520%2520%2509%253Cimg%2520class%253D%2522avatar%2520avatar_sm%2522%2520src%253D%2522%252Fassets%252Fstud.jpg%2522%2520alt%253D%2522avatar_small%2522%253E%250A%2520%2520%2520%2520%2509%253Cspan%2520class%253D%2522badge_avatar%2520badge_dnd%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%253C%252Fdiv%253E"
+                    style="width: 743px; height: 458px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+
+            <h2 class="avatar_head">Badges on Icons</h2>
+            <p class="avatar_desc">
+                It includes Number Badge that is used to show the no. of items present in the parent component.
+            </p>
+
+            <div class="badge_container">
+                <div class="badge">
+                    <span class="material-icons-outlined md-36">notifications</span>
+                    <span class="badge_icon badge_number">5</span>
+                </div>
+
+                <div class="badge">
+                    <span class="material-icons-outlined md-36">shopping_bag</span>
+                    <span class="badge_icon badge_number">2</span>
+                </div>
+            </div>
+
+            <div class="display_code">
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=material&wt=none&l=css&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Droid+Sans+Mono&fs=14.5px&lh=147%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522badge_container%2522%253E%250A%2509%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2509%2509%253Cspan%2520class%253D%2522material-icons-outlined%2520md-36%2522%253Enotifications%253C%252Fspan%253E%250A%2509%2509%253Cspan%2520class%253D%2522badge_icon%2520badge_number%2522%253E5%253C%252Fspan%253E%250A%2509%253C%252Fdiv%253E%250A%250A%2509%253Cdiv%2520class%253D%2522badge%2522%253E%250A%2509%2509%253Cspan%2520class%253D%2522material-icons-outlined%2520md-36%2522%253Eshopping_bag%253C%252Fspan%253E%250A%2509%2509%253Cspan%2520class%253D%2522badge_icon%2520badge_number%2522%253E2%253C%252Fspan%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                    style="width: 665px; height: 309px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
