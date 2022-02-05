@@ -1,18 +1,5 @@
 @import url("/docs/main.css");
 
-.alert_head {
-    font-size: 1.5rem;
-    padding-top: 2rem;
-    border-top: 1px solid var(--line-color);
-}
-
-.alert_desc {
-    margin: 2rem 0;
-    font-size: 1rem;
-    color: var(--light-grey-color);
-    font-weight: 400;
-}
-
 .alert_box {
     width: 100%;
     display: flex;

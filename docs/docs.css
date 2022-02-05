@@ -65,7 +65,25 @@
     padding-bottom: 2rem;
     max-width: 50vw;
 }
-  
-  .display_code iframe {
+
+.doc_main_head {
+    font-size: 1.5rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--line-color);
+}
+
+.doc_main_desc {
+    margin: 2rem 0;
+    font-size: 1rem;
+    color: var(--light-grey-color);
+    font-weight: 400;
+}
+
+.doc_component {
+    display: flex;
+    align-items: flex-start;
+}
+
+.display_code iframe {
     max-width: 100%;
 }

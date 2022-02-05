@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/components/button/button.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/docs/main.css">
+    <script src="https://kit.fontawesome.com/b2c3fdb829.js" crossorigin="anonymous"></script>
+    <title>Button</title>
+</head>
+
+<body>
+
+    <!-- Nav Bar -->
+
+    <nav class="nav">
+        <div class="nav_container">
+            <a class="nav_heading" href="/">Zero<span class="span">+</span>1 UI</a>
+            <div class="nav_list_container">
+                <ul class="nav_list">
+                    <li class="nav_list_icons">
+                        <a class="nav_icons" target="_blank" href="https://github.com/manojasarsa"><i
+                                class="fab fa-github fa-2x"></i></a>
+                    </li>
+                    <li class="nav_list_icons">
+                        <a class="nav_icons" target="_blank" href="https://www.linkedin.com/in/manoj-asarsa"><i
+                                class="fab fa-linkedin fa-2x"></i></a>
+                    </li>
+                    <li class="nav_list_icons">
+                        <a class="nav_icons" target="_blank" href="https://twitter.com/manoj_asarsa"><i
+                                class="fab fa-twitter fa-2x"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="doc_sidebar">
+        <div class="doc_heading">Getting Started</div>
+        <div class="doc_sidebar_list">
+            <a class="doc_comp_link" href="">Installation</a>
+        </div>
+        <div class="doc_heading">Components</div>
+        <ul>
+            <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/avatar/avatar.html">Avatar</a></li>
+            <li class="doc_sidebar_list"><a class="doc_comp_link" href="">Alert</a></li>
+            <li class="doc_sidebar_list"><a class="doc_comp_link" href="">Badge</a></li>
+            <li class="doc_sidebar_list"><a class="doc_comp_link" href="">Button</a></li>
+            <li class="doc_sidebar_list"><a class="doc_comp_link" href="">Card</a></li>
+            <li class="doc_sidebar_list"><a class="doc_comp_link" href="">Image</a></li>
+            <li class="doc_sidebar_list"><a class="doc_comp_link" href="">Input</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+
+    <div class="doc_content">
+
+        <div class="doc_main_container">
+            <h2 class="doc_main_head">Button</h2>
+            <p class="doc_main_desc">
+                Buttons are also called as call to action. It allow users to take actions, and make choices, with a
+                single tap.
+                We have range of buttons and their states.
+            </p>
+            <div class="display_code">
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=material&wt=none&l=css&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Droid+Sans+Mono&fs=14.5px&lh=147%25&si=false&es=2x&wm=false&code=%253Clink%2520rel%253D%2522stylesheet%2522%2520%250Ahref%253D%2522%252Fcomponents%252Fbutton%252Fbutton.css%2522%253E"
+                    style="width: 360px; height: 117px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+
+            <!-- Contained Buttons -->
+
+            <h2 class="doc_main_head">Contained Buttons</h2>
+            <p class="doc_main_desc">
+                Contained buttons are high-emphasis, distinguished by their use of elevation and fill. They contain
+                actions that are primary to your app.
+            </p>
+
+            <div class="doc_component">
+                <button class="btn">Default</button>
+                <button class="btn btn_primary">Primary</button>
+                <button class="btn btn_secondary">Secondary</button>
+                <button class="btn btn_disabled">Disabled</button>
+            </div>
+
+
+            <div class="display_code">
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=material&wt=none&l=css&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Droid+Sans+Mono&fs=14.5px&lh=147%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2522%253EDefault%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn_primary%2522%253EPrimary%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn_secondary%2522%253ESecondary%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn_disabled%2522%253EDisabled%253C%252Fbutton%253E"
+                    style="width: 490px; height: 159px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+
+            <!-- Outline Buttons -->
+
+            <h2 class="doc_main_head">Outline Buttons</h2>
+            <p class="doc_main_desc">
+                Outlined buttons are medium-emphasis buttons. They contain actions that are important, but aren’t the
+                primary action in an app.
+            </p>
+
+            <div class="doc_component">
+                <button class="btn btn_primary_outline">Primary</button>
+                <button class="btn btn_secondary_outline">Secondary</button>
+            </div>
+
+
+            <div class="display_code">
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=material&wt=none&l=css&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Droid+Sans+Mono&fs=14.5px&lh=147%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn_primary_outline%2522%253EPrimary%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn_secondary_outline%2522%253ESecondary%253C%252Fbutton%253E"
+                    style="width: 560px; height: 117px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+
+            <!-- Link Buttons -->
+
+            <h2 class="doc_main_head">Link Buttons</h2>
+            <p class="doc_main_desc">
+                Want to attach a link action, at a button tap? Use Link Button
+            </p>
+
+            <div class="doc_component">
+                <button class="btn btn_link">
+                    <a href="">DEFAULT</a>
+                </button>
+            </div>
+
+            <div class="display_code">
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=material&wt=none&l=css&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Droid+Sans+Mono&fs=14.5px&lh=147%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn_link%2522%253E%250A%2509%253Ca%2520href%253D%2522%2522%253EDEFAULT%253C%252Fa%253E%250A%253C%252Fbutton%253E"
+                    style="width: 290px; height: 138px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+
+
+            <!-- Icon Buttons -->
+
+            <h2 class="doc_main_head">Icon Buttons</h2>
+            <p class="doc_main_desc">
+                Sometimes you might want to have icons for certain button to enhance the UX of the application as we
+                recognize logos more easily than plain text. For example, if you have a delete button you can label it
+                with a dustbin icon.
+            </p>
+
+            <div class="doc_component">
+                <button class="btn btn_secondary_icon">
+                    <span class="material-icons-outlined">
+                        delete_outline
+                    </span>
+                    DELETE
+                </button>
+                <button class="btn btn_primary_icon">
+                    <span class="material-icons-outlined">
+                        save
+                    </span>
+                    SAVE
+                </button>
+            </div>
+
+            <div class="display_code">
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=material&wt=none&l=css&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Droid+Sans+Mono&fs=14.5px&lh=147%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn_secondary_icon%2522%253E%250A%2509%253Cspan%2520class%253D%2522material-icons-outlined%2522%253E%250A%2509%2509delete_outline%250A%2509%253C%252Fspan%253E%250A%2509DELETE%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn_primary_icon%2522%253E%250A%2509%253Cspan%2520class%253D%2522material-icons-outlined%2522%253E%250A%2509%2509save%250A%2509%253C%252Fspan%253E%250A%2509SAVE%250A%253C%252Fbutton%253E"
+                    style="width: 403px; height: 330px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+
+            <!-- Floating Action Button -->
+
+            <h2 class="doc_main_head">Floating Action Buttons</h2>
+            <p class="doc_main_desc">
+                Icons are also appropriate for toggle buttons that allow a single choice to be selected or deselected,
+                such as adding or removing a star to an item.
+            </p>
+
+            <div class="doc_component">
+                <button class="btn btn_secondary btn_floating">
+                    <span class="material-icons-outlined">
+                        add
+                    </span>
+                </button>
+                <button class="btn btn_primary btn_floating">
+                    <span class="material-icons-outlined">
+                        edit
+                    </span>
+                </button>
+                <button class="btn btn_secondary btn_floating">
+                    <span class="material-icons-outlined">
+                        delete_outline
+                    </span>
+                </button>
+            </div>
+
+            <div class="display_code">
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=material&wt=none&l=css&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Droid+Sans+Mono&fs=14.5px&lh=147%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn_secondary%2520btn_floating%2522%253E%250A%2509%253Cspan%2520class%253D%2522material-icons-outlined%2522%253E%250A%2509%2509add%250A%2509%253C%252Fspan%253E%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn_primary%2520btn_floating%2522%253E%250A%2509%253Cspan%2520class%253D%2522material-icons-outlined%2522%253E%250A%2509%2509edit%250A%2509%253C%252Fspan%253E%250A%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn_secondary%2520btn_floating%2522%253E%250A%2509%253Cspan%2520class%253D%2522material-icons-outlined%2522%253E%250A%2509%2509delete_outline%250A%2509%253C%252Fspan%253E%250A%253C%252Fbutton%253E"
+                    style="width: 447px; height: 394px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
