@@ -1,14 +1,14 @@
 @import url("/docs/main.css");
 
 .alert_container {
-    background-color: var(--white);
+    background-color: var(--white-color);
     display: flex;
     flex-direction: column;
     min-width: fit-content;
     margin: 2rem auto;    
     padding: 1.5rem 0rem;
     justify-content: flex-start;
-    border-bottom: 1px solid var(--line);
+    border-bottom: 1px solid var(--line-color);
     flex-wrap: wrap;
     overflow: auto;
     text-align: left;
@@ -17,13 +17,13 @@
 .alert_head {
     font-size: 1.5rem;
     padding-top: 2rem;
-    border-top: 1px solid var(--line);
+    border-top: 1px solid var(--line-color);
 }
 
 .alert_desc {
     margin: 2rem 0;
     font-size: 1rem;
-    color: var(--light-grey);
+    color: var(--light-grey-color);
     font-weight: 400;
 }
 
@@ -37,32 +37,32 @@
     display: flex;
     margin: 1rem;
     padding: 1rem;
-    color: #1b7052;
-    background-color: #84f1c9;
+    color: var(--success-color);
+    background-color: var(--success-background-color);
 }
 
 .alert_error {
     display: flex;
     margin: 1rem;
     padding: 1rem;
-    color: #dc3545;
-    background-color: #fcc5c5;
+    color: var(--alert-color);
+    background-color: var(--alert-background-color);
 }
 
 .alert_warning {
     display: flex;
     margin: 1rem;
     padding: 1rem;
-    color: #ff9204;
-    background-color: #ffe7c5;
+    color: var(--warning-color);
+    background-color: var(--warning-background-color);
 }
 
 .alert_info {
     display: flex;
     margin: 1rem;
     padding: 1rem;
-    color: #29438b;
-    background-color: #7fd2e6;
+    color: var(--info-color);
+    background-color: var(--info-background-color);
 }
 
 .alert_box span {
