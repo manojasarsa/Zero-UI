@@ -21,15 +21,16 @@
 
 .doc_sidebar_list { 
     font-size: 1rem;
-    padding: 0.8rem 0rem;
+
 }
 
 .doc_comp_link {
     color: var(--grey);
-    
+    display: block;
+    padding: 0.8rem 0rem;
 }
 
-.doc_sidebar_list:hover{
+.doc_comp_link:hover{
     background-color: var(--shadow);
 }
 
