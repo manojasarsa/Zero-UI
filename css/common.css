@@ -66,13 +66,3 @@ select {
 h1, h2, h3, h4, h5, h6, p {
   color: var(--primary-color);
 }
-
-.display_code {
-  margin: 2rem 0;
-  padding-bottom: 2rem;
-  max-width: 50vw;
-}
-
-.display_code iframe {
-  max-width: 100%;
-}
