@@ -1,23 +1,5 @@
 @import url("/docs/main.css");
 
-.badge_head {
-    font-size: 1.5rem;
-    padding-top: 2rem;
-    border-top: 1px solid var(--line-color);
-}
-
-.badge_desc {
-    margin: 2rem 0;
-    font-size: 1rem;
-    color: var(--light-grey-color);
-    font-weight: 400;
-}
-
-.badge_container {
-    display: flex;
-    align-items: flex-start;
-}
-
 .badge {
     position: relative;
     display: flex;
