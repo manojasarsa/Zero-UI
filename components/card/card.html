@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/components/card/card.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/docs/main.css">
+    <script src="https://kit.fontawesome.com/b2c3fdb829.js" crossorigin="anonymous"></script>
+    <title>Card</title>
+</head>
+<body>
+
+    <!-- Nav Bar -->
+
+    <nav class="nav">
+        <div class="nav_container">
+            <a class="nav_heading" href="/">Zero<span class="span">+</span>1 UI</a>
+            <div class="nav_list_container">
+                <ul class="nav_list">
+                    <li class="nav_list_icons">
+                        <a class="nav_icons" target="_blank" href="https://github.com/manojasarsa"><i
+                                class="fab fa-github fa-2x"></i></a>
+                    </li>
+                    <li class="nav_list_icons">
+                        <a class="nav_icons" target="_blank" href="https://www.linkedin.com/in/manoj-asarsa"><i
+                                class="fab fa-linkedin fa-2x"></i></a>
+                    </li>
+                    <li class="nav_list_icons">
+                        <a class="nav_icons" target="_blank" href="https://twitter.com/manoj_asarsa"><i
+                                class="fab fa-twitter fa-2x"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="doc_sidebar">
+        <div class="doc_heading">Getting Started</div>
+        <div class="doc_sidebar_list">
+            <a class="doc_comp_link" href="">Installation</a>
+        </div>
+        <div class="doc_heading">Components</div>
+        <ul>
+            <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/avatar/avatar.html">Avatar</a></li>
+            <li class="doc_sidebar_list"><a class="doc_comp_link" href="">Alert</a></li>
+            <li class="doc_sidebar_list"><a class="doc_comp_link" href="">Badge</a></li>
+            <li class="doc_sidebar_list"><a class="doc_comp_link" href="">Button</a></li>
+            <li class="doc_sidebar_list"><a class="doc_comp_link" href="">Card</a></li>
+            <li class="doc_sidebar_list"><a class="doc_comp_link" href="">Image</a></li>
+            <li class="doc_sidebar_list"><a class="doc_comp_link" href="">Input</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+
+    <div class="doc_content">
+
+        <div class="doc_main_container">
+            <h2 class="doc_main_head">Card</h2>
+            <p class="doc_main_desc">
+                Cards are surfaces that display content and actions about a single subject like product details. Elements, like text and images, should be placed on them in a way that clearly indicates hierarchy.
+            </p>
+            <div class="display_code">
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=material&wt=none&l=css&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Droid+Sans+Mono&fs=14.5px&lh=147%25&si=false&es=2x&wm=false&code=%253Clink%2520rel%253D%2522stylesheet%2522%2520%250Ahref%253D%2522https%253A%252F%252Fzero-ui.netlify.app%252Fcomponents%252Fcard%252Fcard.css%2522%253E"
+                    style="width: 560px; height: 117px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+
+            <!-- Simple Text Card -->
+
+            <h2 class="doc_main_head">Simple Text Card</h2>
+            <p class="doc_main_desc">
+                Simple Card is the one that contains a title, a descriptive text along with an action button. 
+            </p>
+
+            <div class="card">
+                <div class="card_container flex_column">
+                    <h3 class="card_title">Card Title</h3>
+                    <p class="card_text">
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut            labore et dolore magna aliqua. Ut enim ad minim veniam.
+                    </p>
+                    <button class="btn btn_secondary">BUTTON</button>
+                </div>
+            </div>
+
+            <div class="display_code">
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=material&wt=none&l=css&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Droid+Sans+Mono&fs=14.5px&lh=147%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card%2522%253E%250A%2509%253Cdiv%2520class%253D%2522card_container%2520flex_column%2522%253E%250A%2509%2509%253Ch3%2520class%253D%2522card_title%2522%253ECard%2520Title%253C%252Fh3%253E%250A%2509%2509%253Cp%2520class%253D%2522card_text%2522%253E%250A%2509%2509%2509%2522Lorem%2520ipsum%2520dolor%2520sit%2520amet%252C%2520consectetur%2520adipiscing%2520elit%252C%2520sed%2520do%2520eiusmod%2520tempor%2520incididunt%2520ut%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2509%2509labore%2520et%2520dolore%2520magna%2520aliqua.%2520Ut%2520enim%2520ad%2520minim%2520veniam.%250A%2509%2509%253C%252Fp%253E%250A%2509%2509%253Cbutton%2520class%253D%2522btn%2520btn_secondary%2522%253EBUTTON%253C%252Fbutton%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                    style="width: 1024px; height: 287px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+
+            <!-- Image Card -->
+
+            <h2 class="doc_main_head">Image Card or Vertical Card</h2>
+            <p class="doc_main_desc">
+                Image Card is the one that contains an Image, Title & Text.
+            </p>
+
+            <div class="card_image">
+                <div class="card_vertical flex_column">
+                    <div class="card_vertical_info">
+                        <img class="img_responsive" src="/assets/shop.jpg" alt="shopping-item">
+                        <p class="card_text">Real Madrid Unisex Sweatshirt for Men/Women</p>
+                        <p class="card_subtext">Cotton Super Combed Fabric</p>
+                        <p class="card_text card_price">₹ 2,199</p>
+                        <button class="btn btn_secondary">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="display_code">
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=material&wt=none&l=css&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Droid+Sans+Mono&fs=14.5px&lh=147%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card_image%2522%253E%250A%2509%253Cdiv%2520class%253D%2522card_vertical%2520flex_column%2522%253E%250A%2509%2509%253Cdiv%2520class%253D%2522card_vertical_info%2522%253E%250A%2509%2509%2509%253Cimg%2520class%253D%2522img_responsive%2522%2520src%253D%2522%252Fassets%252Fshop.jpg%2522%2520alt%253D%2522shopping-item%2522%253E%250A%2509%2509%2509%253Cp%2520class%253D%2522card_text%2522%253EReal%2520Madrid%2520Unisex%2520Sweatshirt%2520for%2520Men%252FWomen%253C%252Fp%253E%250A%2509%2509%2509%253Cp%2520class%253D%2522card_subtext%2522%253ECotton%2520Super%2520Combed%2520Fabric%253C%252Fp%253E%250A%2509%2509%2509%253Cp%2520class%253D%2522card_text%2520card_price%2522%253E%25E2%2582%25B9%25202%252C199%253C%252Fp%253E%250A%2509%2509%2509%253Cbutton%2520class%253D%2522btn%2520btn_secondary%2522%253EADD%2520TO%2520CART%253C%252Fbutton%253E%250A%2509%2509%253C%252Fdiv%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                    style="width: 760px; height: 309px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+
+            <!-- Horizontal Card -->
+
+            <h2 class="doc_main_head">Horizontal Card</h2>
+            <p class="doc_main_desc">
+                A horizontal card with image and text.
+                Card's image may have a margin or it can be full-bleed. By default card's images are full-bleed. If you want image to have margin, you can use default-container class.
+            </p>
+
+            <div class="card_image">
+                <div class="card_horizontal ">
+                    <div class="card_horizontal_image">
+                        <img class="img_responsive"src="/assets/shop.jpg" alt="shopping-item">
+                    </div>
+                    <div class="flex_column">
+                        <p class="card_text">Real Madrid Unisex Sweatshirt for Men/Women</p>
+                        <p class="card_subtext">Cotton Super Combed Fabric</p>
+                        <p class="card_text card_price">₹ 2,199</p>
+                        <button class="btn btn_primary">REMOVE</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="display_code">
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=material&wt=none&l=css&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Droid+Sans+Mono&fs=14.5px&lh=147%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card_image%2522%253E%250A%2509%253Cdiv%2520class%253D%2522card_horizontal%2520%2522%253E%250A%2509%2509%253Cdiv%2520class%253D%2522card_horizontal_image%2522%253E%250A%2509%2509%2509%253Cimg%2520class%253D%2522img_responsive%2522src%253D%2522%252Fassets%252Fshop.jpg%2522%2520alt%253D%2522shopping-item%2522%253E%250A%2509%2509%253C%252Fdiv%253E%250A%2509%2509%253Cdiv%2520class%253D%2522flex_column%2522%253E%250A%2509%2509%2509%253Cp%2520class%253D%2522card_text%2522%253EReal%2520Madrid%2520Unisex%2520Sweatshirt%2520for%2520Men%252FWomen%253C%252Fp%253E%250A%2509%2509%2509%253Cp%2520class%253D%2522card_subtext%2522%253ECotton%2520Super%2520Combed%2520Fabric%253C%252Fp%253E%250A%2509%2509%2509%253Cp%2520class%253D%2522card_text%2520card_price%2522%253E%25E2%2582%25B9%25202%252C199%253C%252Fp%253E%250A%2509%2509%2509%253Cbutton%2520class%253D%2522btn%2520btn_primary%2522%253EREMOVE%253C%252Fbutton%253E%250A%2509%2509%253C%252Fdiv%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                    style="width: 751px; height: 351px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+
+            <!-- Cards with text overlay -->
+
+            <h2 class="doc_main_head">Cards with text overlay</h2>
+            <p class="doc_main_desc">
+                You need to wrap element that need to be overlay and on which it is to be overlayed in a single div.
+            </p>
+
+            <div class="card_image ">
+                <div class="card_vertical flex_column">
+                    <div class="card_vertical_info">
+                        <img class="img_responsive" src="/assets/shop.jpg" alt="shopping-item">
+                        <p class="card_text">Real Madrid Unisex Sweatshirt for Men/Women</p>
+                        <p class="card_subtext">Cotton Super Combed Fabric</p>
+                        <p class="card_text card_price">₹ 2,199</p>
+                        <button class="btn btn_secondary">ADD TO CART</button>
+                    </div>
+                    <div class="card_image card_overlay">
+                        <p class="card_overlay_text">OUT OF STOCK</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="display_code">
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=material&wt=none&l=css&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Droid+Sans+Mono&fs=14.5px&lh=147%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card_image%2520%2522%253E%250A%2509%253Cdiv%2520class%253D%2522card_vertical%2520flex_column%2522%253E%250A%2509%2509%253Cdiv%2520class%253D%2522card_vertical_info%2522%253E%250A%2509%2509%2509%253Cimg%2520class%253D%2522img_responsive%2522%2520src%253D%2522%252Fassets%252Fshop.jpg%2522%2520alt%253D%2522shopping-item%2522%253E%250A%2509%2509%2509%253Cp%2520class%253D%2522card_text%2522%253EReal%2520Madrid%2520Unisex%2520Sweatshirt%2520for%2520Men%252FWomen%253C%252Fp%253E%250A%2509%2509%2509%253Cp%2520class%253D%2522card_subtext%2522%253ECotton%2520Super%2520Combed%2520Fabric%253C%252Fp%253E%250A%2509%2509%2509%253Cp%2520class%253D%2522card_text%2520card_price%2522%253E%25E2%2582%25B9%25202%252C199%253C%252Fp%253E%250A%2509%2509%2509%253Cbutton%2520class%253D%2522btn%2520btn_secondary%2522%253EADD%2520TO%2520CART%253C%252Fbutton%253E%250A%2509%2509%253C%252Fdiv%253E%250A%2509%2509%253Cdiv%2520class%253D%2522card_image%2520card_overlay%2522%253E%250A%2509%2509%2509%253Cp%2520class%253D%2522card_overlay_text%2522%253EOUT%2520OF%2520STOCK%253C%252Fp%253E%250A%2509%2509%253C%252Fdiv%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                    style="width: 760px; height: 372px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
