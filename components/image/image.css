@@ -1,0 +1,16 @@
+@import url("/docs/main.css");
+
+.image_container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.img_responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+.img_round {
+    border-radius: 50%;
+}
