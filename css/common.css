@@ -49,7 +49,7 @@ ol[role='list'], li{
 img,
 picture {
   max-width: 100%;
-  display: block;
+  /* display: block; */
 }
 
 a {
