@@ -1,0 +1,55 @@
+@import url("/docs/main.css");
+
+.input_container {
+    padding: 2rem;
+    margin: 1rem 0 3rem 0;
+    border: 1px solid var(--light-grey-color);
+    box-shadow: 2px 2px 1px var(--shadow-color);
+    min-height: 100px;
+    width: 70%;
+    background-color: var(--line-color);
+}
+
+.input_heading {
+    margin: 2rem 0;
+}
+
+.input_subheading {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.input_box {
+    padding: 1rem;
+    background-color: var(--shadow-color);
+    border: 1px solid var(--shadow-color);
+}
+
+.input_checkbox {
+    width: 20px;
+    height: 20px;
+    margin-top: 1rem ;
+}
+
+.input_box_error {
+    padding: 1rem;
+    background-color: var(--shadow-color);
+    border: 1px solid var(--alert-color);
+    color: var(--alert-color);
+}
+
+.input_error {
+    margin-top: 1rem;
+    color: var(--alert-color);
+}
+
+.input_label {
+   font-size: 1.2rem;
+   color: var(--primary-color);
+   padding: 0.4rem 0;
+}
+
+.input_field {
+    margin: 0 1.5rem;
+}
