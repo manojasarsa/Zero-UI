@@ -1,0 +1,42 @@
+@import url("/docs/main.css");
+
+.text_box {
+    border: 1px solid var(--light-grey-color);
+    padding: 1.5rem;
+}
+
+.text_left {
+    text-align: left;
+}
+
+.text_center {
+    text-align: center;
+}
+
+.text_right {
+    text-align: right;
+}
+
+.text_xl {
+    font-size: x-large;
+}
+
+.text_lg {
+    font-size: large;
+}
+
+.text_md {
+    font-size: medium;
+}
+
+.text_sm {
+    font-size: small;
+}
+
+.text_xm {
+    font-size: x-small;
+}
+
+.text_gray {
+    color: var(--grey-color);
+}
