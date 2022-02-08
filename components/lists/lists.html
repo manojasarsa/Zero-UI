@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/components/lists/lists.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/docs/main.css">
+    <script src="https://kit.fontawesome.com/b2c3fdb829.js" crossorigin="anonymous"></script>
+    <title>Lists</title>
+</head>
+<body>
+    
+    <!-- Nav Bar -->
+
+    <nav class="nav">
+        <div class="nav_container">
+            <a class="nav_heading" href="/">Zero<span class="span">+</span>1 UI</a>
+            <div class="nav_list_container">
+                <ul class="nav_list">
+                    <li class="nav_list_icons">
+                        <a class="nav_icons" target="_blank" href="https://github.com/manojasarsa"><i
+                                class="fab fa-github fa-2x"></i></a>
+                    </li>
+                    <li class="nav_list_icons">
+                        <a class="nav_icons" target="_blank" href="https://www.linkedin.com/in/manoj-asarsa"><i
+                                class="fab fa-linkedin fa-2x"></i></a>
+                    </li>
+                    <li class="nav_list_icons">
+                        <a class="nav_icons" target="_blank" href="https://twitter.com/manoj_asarsa"><i
+                                class="fab fa-twitter fa-2x"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="doc_sidebar">
+        <div class="doc_heading">Getting Started</div>
+        <div class="doc_sidebar_list">
+            <a class="doc_comp_link" href="/components/getting-started.html">Installation</a>
+        </div>
+        <div class="doc_heading">Components</div>
+        <ul>
+            <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/avatar/avatar.html">Avatar</a></li>
+            <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/alert/alert.html">Alert</a></li>
+            <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/badge/badge.html">Badge</a></li>
+            <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/button/button.html">Button</a></li>
+            <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/card/card.html">Card</a></li>
+            <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/image/image.html">Image</a></li>
+            <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/input/input.html">Input</a></li>
+
+            <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/text-utilities/text-utilities.html">Text Utilities</a></li>
+            <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/lists/lists.html">Lists</a></li>
+            <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/navigation/navigation.html">Navigation</a></li>
+            <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/modal/modal.html">Modal</a></li>
+            <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/rating/rating.html">Rating</a></li>
+            <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/toast/toast.html">Toast</a></li>
+            <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/simplified-grid/simplified-grid.html">Simplified Grid</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+
+    <div class="doc_content">
+
+        <div class="doc_main_container">
+            <h2 class="doc_main_head">Lists</h2>
+            <p class="doc_main_desc">
+                Lists can be use for so many things. Such as Listing some items, Stacked list, Space list, Navigation, etc. We have different types of list as mentioned below.
+            </p>
+            <div class="display_code">
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=material&wt=none&l=css&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Droid+Sans+Mono&fs=14.5px&lh=147%25&si=false&es=2x&wm=false&code=%253Clink%2520rel%253D%2522stylesheet%2522%2520%250Ahref%253D%2522https%253A%252F%252Fzero-ui.netlify.app%252Fcomponents%252Flists%252Flists.css%2522%253E"
+                    style="width: 578px; height: 117px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+
+            <!-- Stacked (Notification Page) -->
+
+            <h2 class="doc_main_head">Stacked Lists(Notification Page)</h2>
+            <p class="doc_main_desc">
+                Stacked list generally use for notification in you apps.
+            </p>
+
+            <ul class="list list_stacked">
+                <li>Notification One</li>
+                <li>Notification Two</li>
+                <li>Notification Three</li>
+                <li>Notification Four</li>
+            </ul>
+
+            <div class="display_code">
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=material&wt=none&l=css&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Droid+Sans+Mono&fs=14.5px&lh=147%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522list%2520list_stacked%2522%253E%250A%2520%2520%253Cli%253ENotification%2520One%253C%252Fli%253E%250A%2520%2520%253Cli%253ENotification%2520Two%253C%252Fli%253E%250A%2520%2520%253Cli%253ENotification%2520Three%253C%252Fli%253E%250A%2520%2520%253Cli%253ENotification%2520Four%253C%252Fli%253E%250A%253C%252Ful%253E%250A"
+                    style="width: 299px; height: 223px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+
+            <!-- Spaced List -->
+
+            <h2 class="doc_main_head">Spaced List (normal lists)</h2>
+            <p class="doc_main_desc">
+                It is similar as Stacked list. But, all list items are not close to each other.
+            </p>
+
+            <ul class="list list_spaced">
+                <div class="list_heading">
+                    <span class="list_heading">Spaced List</span>
+                </div>
+                <li>Spaced List One</li>
+                <li>Spaced List Two</li>
+                <li>Spaced List Three</li>
+                <li>Spaced List Four</li>
+            </ul>
+
+            <div class="display_code">
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=material&wt=none&l=css&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Droid+Sans+Mono&fs=14.5px&lh=147%25&si=false&es=2x&wm=false&code=%253Cul%2520class%253D%2522list%2520list_spaced%2522%253E%250A%2509%253Cdiv%2520class%253D%2522list_heading%2522%253E%250A%2509%2509%253Cspan%2520class%253D%2522list_heading%2522%253ESpaced%2520List%253C%252Fspan%253E%250A%2509%253C%252Fdiv%253E%250A%2509%253Cli%253ESpaced%2520List%2520One%253C%252Fli%253E%250A%2509%253Cli%253ESpaced%2520List%2520Two%253C%252Fli%253E%250A%2509%253Cli%253ESpaced%2520List%2520Three%253C%252Fli%253E%250A%2509%253Cli%253ESpaced%2520List%2520Four%253C%252Fli%253E%250A%253C%252Ful%253E"
+                    style="width: 499px; height: 266px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
