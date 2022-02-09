@@ -1,8 +1,8 @@
 @import url("/docs/main.css");
 
 .btn {
-    margin: 2rem;
-    padding: 1.1rem 1.8rem;
+    margin: 1rem;
+    padding: 1rem;
     border: 2px solid var(--p-color);
     border-radius: 7px;
     letter-spacing: 0.2rem;

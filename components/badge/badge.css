@@ -1,48 +1,61 @@
 @import url("/docs/main.css");
 
-.badge {
+.badge_container {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-right: 1rem;
-    align-self: flex-end;
-    text-align: center;
-}
-
-.badge_avatar {
-    position: absolute;
-    width: 17%;
-    height: 17%;
     border-radius: 50%;
-    bottom: 4%;
-    right: 6%;
+    margin-right: 10px;
 }
 
-.badge_avatar.badge_online {
+.badge_wrapper {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    column-gap: 1.5rem;
+}
+
+.badge_status {
+    position: absolute;
+    min-width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    right: 1.5em;
+    bottom: 0.6em;
+    border: 2px solid var(--line-color);
+}
+
+.badge_online {
     background-color: var(--success-color);
+    right: 0.4em;
+    bottom: 1.3em;
 }
 
-.badge_avatar.badge_offline {
+.badge_offline {
     background-color: var(--warning-color);
+    right: 0.3em;
 }
 
-.badge_avatar.badge_dnd {
+.badge_dnd {
+    background-color: var(--alert-color);
+    right: -0.3em;
+    top: 3.3em;
+}
+
+.badge_icon_num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.8rem;
+    min-width: 1.8rem;
+    line-height: 0;
+    right: -0.8em;
+    bottom: 1.9em;
+    color: var(--white-color);
     background-color: var(--alert-color);
 }
 
-.badge_icon.badge_number {
-    position: absolute;
-    width: 45%;
-    height: 45%;
-    border-radius: 50%;
-    top: 0;
-    right: -10%;
-    font-size: 1em;
-    color: var(--white-color);
-    background-color: var(--secondary-color);
-}
-
-.material-icons-outlined.md-36 {
-    font-size: 56px;
+.badge_icon i {
+    color: var(--primary-color);
+    margin-left: 10px;
+    font-size: 3rem;
 }
