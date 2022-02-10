@@ -11,14 +11,11 @@
     justify-content: center;
     align-items: center;
     display: none;
-    background-color: var(--white-color);
 }
 
 .modal {
     width: 35vw;
     height: 20vw;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     row-gap: 1rem;
@@ -29,7 +26,6 @@
 .modal_active {
     z-index: 1;
     display: flex;
-    background-color: var(--);
 }
 
 .modal p {
