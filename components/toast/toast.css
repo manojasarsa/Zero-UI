@@ -1,0 +1,44 @@
+@import url("/docs/main.css");
+
+.toast {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 0.5em;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    display: none;
+}
+
+.toast_position {
+    position: fixed;
+    display: flex;
+    z-index: 4;
+}
+
+.toast_active_leading {
+    bottom: 1em;
+    left: 1em;
+}
+
+.toast_active_top_right {
+    top: 1em;
+    right: 1em;
+}
+
+button.retry_btn {
+    cursor: pointer;
+    border: none;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.btn_toast {
+    width: fit-content;
+}
+
+.toast i {
+    cursor: pointer;
+}

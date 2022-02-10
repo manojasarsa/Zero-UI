@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/components/rating/rating.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/docs/main.css">
+    <script src="https://kit.fontawesome.com/b2c3fdb829.js" crossorigin="anonymous"></script>
+    <title>Rating</title>
+</head>
+
+<body>
+
+    <!-- Nav Bar -->
+
+    <nav class="nav">
+        <div class="nav_container">
+            <a class="nav_heading" href="/">Zero<span class="span">+</span>1 UI</a>
+            <div class="nav_list_container">
+                <ul class="nav_list">
+                    <li class="nav_list_icons">
+                        <a class="nav_icons" target="_blank" href="https://github.com/manojasarsa"><i
+                                class="fab fa-github fa-2x"></i></a>
+                    </li>
+                    <li class="nav_list_icons">
+                        <a class="nav_icons" target="_blank" href="https://www.linkedin.com/in/manoj-asarsa"><i
+                                class="fab fa-linkedin fa-2x"></i></a>
+                    </li>
+                    <li class="nav_list_icons">
+                        <a class="nav_icons" target="_blank" href="https://twitter.com/manoj_asarsa"><i
+                                class="fab fa-twitter fa-2x"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="doc_sidebar">
+        <div class="doc_heading">Getting Started</div>
+        <div class="doc_sidebar_list">
+            <a class="doc_comp_link" href="/components/getting-started.html">Installation</a>
+        </div>
+        <div class="doc_heading">Components</div>
+        <ul>
+            <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/avatar/avatar.html">Avatar</a></li>
+            <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/alert/alert.html">Alert</a></li>
+            <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/badge/badge.html">Badge</a></li>
+            <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/button/button.html">Button</a></li>
+            <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/card/card.html">Card</a></li>
+            <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/image/image.html">Image</a></li>
+            <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/input/input.html">Input</a></li>
+
+            <li class="doc_sidebar_list"><a class="doc_comp_link"
+                    href="/components/text-utilities/text-utilities.html">Text Utilities</a></li>
+            <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/lists/lists.html">Lists</a></li>
+            <li class="doc_sidebar_list"><a class="doc_comp_link"
+                    href="/components/navigation/navigation.html">Navigation</a></li>
+            <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/modal/modal.html">Modal</a></li>
+            <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/rating/rating.html">Rating</a></li>
+            <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/toast/toast.html">Toast</a></li>
+            <li class="doc_sidebar_list"><a class="doc_comp_link"
+                    href="/components/simplified-grid/simplified-grid.html">Simplified Grid</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+
+    <div class="doc_content">
+
+        <div class="doc_main_container">
+            <h2 class="doc_main_head">Rating</h2>
+            <p class="doc_main_desc">
+                Rating components can be used as read-only badge or in reviews section of products. Can be used in reviews section as form too.
+            </p>
+            <div class="display_code">
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=material&wt=none&l=css&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Droid+Sans+Mono&fs=14.5px&lh=147%25&si=false&es=2x&wm=false&code=%253Clink%2520rel%253D%2522stylesheet%2522%2520%250Ahref%253D%2522https%253A%252F%252Fzero-ui.netlify.app%252Fcomponents%252Frating%252Frating.css%2522%253E"
+                    style="width: 595px; height: 117px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+
+            <h2 class="doc_main_head">Example of Rating</h2>
+            <p class="doc_main_desc">
+                It is a static user Rating component. You can use this component by adding below mentiod code.
+            </p>
+
+            <div class="rating_container">
+                <h2>Rating for our service</h2>
+                <div class="rating">
+                    <i class="fas fa-star star rating_star"></i>
+                    <i class="fas fa-star star rating_star"></i>
+                    <i class="fas fa-star star rating_star"></i>
+                    <i class="fas fa-star star"></i>
+                    <i class="fas fa-star star"></i>
+                </div>
+                <button class="btn btn_secondary rating_btn">Submit</button>
+            </div>
+
+            <div class="display_code">
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=material&wt=none&l=css&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Droid+Sans+Mono&fs=14.5px&lh=147%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522rating_container%2522%253E%250A%2509%253Ch2%253ERating%2520for%2520our%2520service%253C%252Fh2%253E%250A%2509%253Cdiv%2520class%253D%2522rating%2522%253E%250A%2509%2509%253Ci%2520class%253D%2522fas%2520fa-star%2520star%2520rating_star%2522%253E%253C%252Fi%253E%250A%2509%2509%253Ci%2520class%253D%2522fas%2520fa-star%2520star%2520rating_star%2522%253E%253C%252Fi%253E%250A%2509%2509%253Ci%2520class%253D%2522fas%2520fa-star%2520star%2520rating_star%2522%253E%253C%252Fi%253E%250A%2509%2509%253Ci%2520class%253D%2522fas%2520fa-star%2520star%2522%253E%253C%252Fi%253E%250A%2509%2509%253Ci%2520class%253D%2522fas%2520fa-star%2520star%2522%253E%253C%252Fi%253E%250A%2509%253C%252Fdiv%253E%250A%2509%253Cbutton%2520class%253D%2522btn%2520btn_secondary%2520rating_btn%2522%253ESubmit%253C%252Fbutton%253E%250A%253C%252Fdiv%253E"
+                    style="width: 594px; height: 309px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
