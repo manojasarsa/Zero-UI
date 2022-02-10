@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/components/simplified-grid/simplified-grid.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/docs/main.css">
+    <script src="https://kit.fontawesome.com/b2c3fdb829.js" crossorigin="anonymous"></script>
+    <title>Simplified Grid</title>
+</head>
+
+<body>
+
+    <!-- Nav Bar -->
+
+    <nav class="nav">
+        <div class="nav_container">
+            <a class="nav_heading" href="/">Zero<span class="span">+</span>1 UI</a>
+            <div class="nav_list_container">
+                <ul class="nav_list">
+                    <li class="nav_list_icons">
+                        <a class="nav_icons" target="_blank" href="https://github.com/manojasarsa"><i
+                                class="fab fa-github fa-2x"></i></a>
+                    </li>
+                    <li class="nav_list_icons">
+                        <a class="nav_icons" target="_blank" href="https://www.linkedin.com/in/manoj-asarsa"><i
+                                class="fab fa-linkedin fa-2x"></i></a>
+                    </li>
+                    <li class="nav_list_icons">
+                        <a class="nav_icons" target="_blank" href="https://twitter.com/manoj_asarsa"><i
+                                class="fab fa-twitter fa-2x"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="doc_sidebar">
+        <div class="doc_heading">Getting Started</div>
+        <div class="doc_sidebar_list">
+            <a class="doc_comp_link" href="/components/getting-started.html">Installation</a>
+        </div>
+        <div class="doc_heading">Components</div>
+        <ul>
+            <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/avatar/avatar.html">Avatar</a></li>
+            <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/alert/alert.html">Alert</a></li>
+            <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/badge/badge.html">Badge</a></li>
+            <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/button/button.html">Button</a></li>
+            <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/card/card.html">Card</a></li>
+            <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/image/image.html">Image</a></li>
+            <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/input/input.html">Input</a></li>
+
+            <li class="doc_sidebar_list"><a class="doc_comp_link"
+                    href="/components/text-utilities/text-utilities.html">Text Utilities</a></li>
+            <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/lists/lists.html">Lists</a></li>
+            <li class="doc_sidebar_list"><a class="doc_comp_link"
+                    href="/components/navigation/navigation.html">Navigation</a></li>
+            <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/modal/modal.html">Modal</a></li>
+            <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/rating/rating.html">Rating</a></li>
+            <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/toast/toast.html">Toast</a></li>
+            <li class="doc_sidebar_list"><a class="doc_comp_link"
+                    href="/components/simplified-grid/simplified-grid.html">Simplified Grid</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+
+    <div class="doc_content">
+
+        <div class="doc_main_container">
+            <h2 class="doc_main_head">Simplified Grid</h2>
+            <p class="doc_main_desc">
+                CSS Grid is a two-dimensional grid system used to work on the layout of UI elements and segments of a webpage.
+                Grid System creates complex responsive web design grid layouts more easily and consistently across browsers.
+                It helps align page elements based on sequenced columns and rows.
+            </p>
+
+            <div class="display_code">
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=material&wt=none&l=css&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Droid+Sans+Mono&fs=14.5px&lh=147%25&si=false&es=2x&wm=false&code=%253Clink%2520rel%253D%2522stylesheet%2522%2520%250Ahref%253D%2522https%253A%252F%252Fzero-ui.netlify.app%252Fcomponents%252Fsimplified-grid%252Fsimplified-grid.css%2522%253E"
+                    style="width: 734px; height: 100px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+
+            <h2 class="doc_main_head">(1x2) Grid :Two Items In A Grid</h2>
+            <p class="doc_main_desc">
+                We have (1x2) grid. To use this you have to add grid_two_columns in parent container and child items should contain class grid_item.
+            </p>
+
+            <div class="grid_container grid_two_columns">
+                <div class="grid_item grid_item1">
+                    <img src="/assets/hat.jpg" class="grid_img img_responsive">
+                </div>
+                <div class="grid_item grid_item2">
+                    <img src="/assets/hat.jpg" class="grid_img img_responsive">
+                </div>
+            </div>
+
+            <div class="display_code">
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=material&wt=none&l=css&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Droid+Sans+Mono&fs=14.5px&lh=147%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522grid_container%2520grid_two_columns%2522%253E%250A%2509%253Cdiv%2520class%253D%2522grid_item%2520grid_item1%2522%253E%250A%2509%2509%253Cimg%2520src%253D%2522%252Fassets%252Fpiercing.jpg%2522%2520class%253D%2522grid_img%2520img_responsive%2522%253E%250A%2509%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522grid_item%2520grid_item2%2522%253E%250A%2509%2509%253Cimg%2520src%253D%2522%252Fassets%252Fhat.jpg%2522%2520class%253D%2522grid_img%2520img_responsive%2522%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                    style="width: 647px; height: 228px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+
+            <h2 class="doc_main_head">(1x3) Grid :Two Items In A Grid</h2>
+            <p class="doc_main_desc">
+                We have (1x3) grid. To use this you have to add grid_three_columns in parent container and child items should contain class grid_item.
+            </p>
+
+            <div class="grid_container grid_three_columns">
+                <div class="grid_item grid_item1">
+                    <img src="/assets/dog.jpg" class="grid_img img_responsive">
+                </div>
+                <div class="grid_item grid_item2">
+                    <img src="/assets/dog.jpg" class="grid_img img_responsive">
+                </div>
+                <div class="grid_item grid_item3">
+                    <img src="/assets/dog.jpg" class="grid_img img_responsive">
+                </div>
+            </div>
+
+            <div class="display_code">
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=material&wt=none&l=css&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Droid+Sans+Mono&fs=14.5px&lh=147%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522grid_container%2520grid_three_columns%2522%253E%250A%2509%253Cdiv%2520class%253D%2522grid_item%2520grid_item1%2522%253E%250A%2509%2509%253Cimg%2520src%253D%2522%252Fassets%252Fdog.jpg%2522%2520class%253D%2522grid_img%2520img_responsive%2522%253E%250A%2509%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522grid_item%2520grid_item2%2522%253E%250A%2509%2509%253Cimg%2520src%253D%2522%252Fassets%252Fdog.jpg%2522%2520class%253D%2522grid_img%2520img_responsive%2522%253E%250A%2509%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522grid_item%2520grid_item3%2522%253E%250A%2509%2509%253Cimg%2520src%253D%2522%252Fassets%252Fdog.jpg%2522%2520class%253D%2522grid_img%2520img_responsive%2522%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                    style="width: 604px; height: 291px; border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
