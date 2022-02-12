@@ -3,28 +3,49 @@
 .card {
     min-height: fit-content;
     width: 60%;
-    margin: 1rem;
-    border: 3px solid var(--shadow-color);
-    box-shadow: 2px 2px 10px var(--grey-color); 
+    box-shadow: 0px 0px 5px 5px var(--shadow-color);
     border-radius: 5px;    
+}
+
+.card_container {
+    margin: 1rem 1rem 0 1rem;
+}
+
+.card_title {
+    font-size: 1rem;
 }
 
 .card_vertical {
     position: relative;
-    margin: 1rem;
-    border: 3px solid var(--shadow-color);
-    box-shadow: 2px 2px 10px var(--grey-color);
+    box-shadow: 0px 0px 5px 5px var(--shadow-color);
     border-radius: 5px;
+}
+
+.card_vertical_info {
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0.5em;
+    flex-wrap: wrap;
 }
 
 .card_horizontal {
     display: flex;
+    justify-content: center;
+    align-items: flex-start;
     width: 100%;
     max-width: 500px;
-    column-gap: 1.5rem;
-    border: 3px solid var(--shadow-color);
-    box-shadow: 1px 1px 10px var(--grey-color);
+    column-gap: 1rem;
+    box-shadow: 0px 0px 5px 5px var(--shadow-color);
     border-radius: 5px;   
+}
+
+/* .card_horizontal_image {
+    width: 25%;
+    margin: 1rem 0 0 1rem;
+} */
+
+.card_horizontal .card_horizontal_text {
+    align-self: center;
 }
 
 .card_overlay {
@@ -41,15 +62,6 @@
     bottom: 0;
 }
 
-.flex_column {
-    display: flex;
-    flex-direction: column;
-}
-
-.card_image {
-    display: flex;
-}
-
 .card_overlay_text {
     font-size: 4em;
     font-weight: 900;
@@ -63,33 +75,39 @@
     transition: all 0.2s ease-in-out;
 }
 
-.card_container {
-    margin: 1rem 1rem 0 1rem;
+.flex_column {
+    display: flex;
+    flex-direction: column;
 }
 
-.card_vertical_info {
-    margin: 1rem;
-}
-
-.card_title {
-    font-size: 1.5rem;
+.card_image {
+    display: flex;
 }
 
 .card_text {
-    font-size: 1rem;
+    font-size: 0.8em;
     font-weight: 600;
-    margin: 1.5rem 0 0 0 ;
+    margin-top: 0.8em;
 }
 
 .card_subtext {
     color: var(--grey-color);
+    font-size: 0.7em;
 }
 
 .card_price {
-    font-size: 1.5rem;
+    margin-top: 0.5em;
 }
 
-.card_horizontal_image {
-    width: 25%;
-    margin: 1rem 0 0 1rem;
+.text_line_through {
+    color: var(--grey-color);
+    text-decoration: line-through;
+    font-size: 0.7em;
+    padding-left: 0.2em;
+}
+
+.card_image .adjust_image {
+    height: 40vh;
+    width: 100%;
+    object-fit: contain;
 }
