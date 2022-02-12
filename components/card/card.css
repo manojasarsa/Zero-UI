@@ -23,7 +23,6 @@
 
 .card_vertical_info {
     justify-content: flex-start;
-    align-items: center;
     margin: 0.5em;
     flex-wrap: wrap;
 }
