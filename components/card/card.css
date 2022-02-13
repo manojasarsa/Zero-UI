@@ -118,3 +118,11 @@
 .card_heart_icon:hover {
     color: var(--red-color);
 }
+
+.left_space {
+    padding-left: 0.5rem;
+}
+
+.right_space {
+    margin-right: 1rem;
+}
