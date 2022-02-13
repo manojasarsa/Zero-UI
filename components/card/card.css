@@ -22,9 +22,11 @@
 }
 
 .card_vertical_info {
+    position: relative;
     justify-content: flex-start;
     margin: 0.5em;
     flex-wrap: wrap;
+    background-color: lightskyblue;
 }
 
 .card_horizontal {
@@ -37,11 +39,6 @@
     box-shadow: 0px 0px 5px 5px var(--shadow-color);
     border-radius: 5px;   
 }
-
-/* .card_horizontal_image {
-    width: 25%;
-    margin: 1rem 0 0 1rem;
-} */
 
 .card_horizontal .card_horizontal_text {
     align-self: center;
@@ -109,4 +106,16 @@
     height: 40vh;
     width: 100%;
     object-fit: contain;
+}
+
+.card_heart_icon {
+    position: absolute;
+    color: var(--white-color);
+    right: 1.5rem;
+    top: 0.8rem;
+    font-size: 1.2rem;
+}
+
+.card_heart_icon:hover {
+    color: var(--red-color);
 }
