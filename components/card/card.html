@@ -87,13 +87,16 @@
                 Simple Card is the one that contains a title, a descriptive text along with an action button. 
             </p>
 
-            <div class="card">
-                <div class="card_container flex_column">
-                    <h3 class="card_title">Card Title</h3>
-                    <p class="card_text">
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut            labore et dolore magna aliqua. Ut enim ad minim veniam.
-                    </p>
-                    <button class="btn btn_secondary">BUTTON</button>
+            <div class="card_outer_box">
+
+                <div class="card">
+                    <div class="card_container flex_column">
+                        <h3 class="card_title">Card Title</h3>
+                        <p class="card_text">
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut            labore et dolore magna aliqua. Ut enim ad minim veniam.
+                        </p>
+                        <button class="btn btn_secondary">BUTTON</button>
+                    </div>
                 </div>
             </div>
 
@@ -105,28 +108,32 @@
                 </iframe>
             </div>
 
-            <!-- Image Card -->
+            <!-- Vertical Image Card -->
 
             <h2 class="doc_main_head">Image Card or Vertical Card</h2>
             <p class="doc_main_desc">
                 Image Card is the one that contains an Image, Title & Text.
             </p>
 
-            <div class="card_image">
-                <div class="card_vertical">
-                    <div class="card_vertical_info flex_column">
-                        <img class="img_responsive adjust_image" src="/assets/shop.jpg" alt="shopping-item">
-                        <p class="card_text left_space">Real Madrid Unisex Sweatshirt for Men/Women</p>
-                        <p class="card_subtext left_space">Cotton Super Combed Fabric</p>
-                        <p class="card_text card_price left_space">₹2,999
-                            <span class="text_line_through">₹4,999</span>
-                        </p>
-                        <button class="btn btn_secondary right_space">Add to Cart</button>
-                        <span class="card_heart_icon">
-                            <i class="fa fa-heart"></i>
-                        </span>
+            <div class="card_outer_box">
+
+                <div class="card_image">
+                    <div class="card_vertical">
+                        <div class="card_vertical_info flex_column">
+                            <img class="img_responsive adjust_image" src="/assets/shop.jpg" alt="shopping-item">
+                            <p class="card_text left_space">Real Madrid Unisex Sweatshirt for Men/Women</p>
+                            <p class="card_subtext left_space">Cotton Super Combed Fabric</p>
+                            <p class="card_text card_price left_space">₹2,999
+                                <span class="text_line_through">₹4,999</span>
+                            </p>
+                            <button class="btn btn_secondary right_space">Add to Cart</button>
+                            <span class="card_heart_icon">
+                                <i class="fa fa-heart"></i>
+                            </span>
+                        </div>
                     </div>
                 </div>
+
             </div>
 
             <div class="display_code">
@@ -145,10 +152,11 @@
                 Card's image may have a margin or it can be full-bleed. By default card's images are full-bleed. If you want image to have margin, you can use default-container class.
             </p>
 
-            <div class="card_image">
-                <div class="card_horizontal ">
-                    <div class="card_horizontal_image">
-                        <img class="img_responsive adjust_image" src="/assets/shop.jpg" alt="shopping-item">
+            <div class="card_outer_box">
+                
+                <div class="card_grid">
+                    <div>
+                        <img class="img_responsive" src="/assets/shop.jpg" alt="shopping-item">
                     </div>
                     <div class="card_horizontal_text flex_column">
                         <p class="card_tex left_space">Real Madrid Unisex Sweatshirt for Men/Women</p>
@@ -160,12 +168,13 @@
                         <button class="btn btn_primary right_space">Remove from Wishlist</button>
                     </div>
                 </div>
+
             </div>
 
             <div class="display_code">
                 <iframe
-                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=material&wt=none&l=css&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Droid+Sans+Mono&fs=14.5px&lh=147%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card_image%2522%253E%250A%2509%253Cdiv%2520class%253D%2522card_horizontal%2520%2522%253E%250A%2509%2509%253Cdiv%2520class%253D%2522card_horizontal_image%2522%253E%250A%2509%2509%2509%253Cimg%2520class%253D%2522img_responsive%2520adjust_image%2522%2520src%253D%2522%252Fassets%252Fshop.jpg%2522%2520alt%253D%2522shopping-item%2522%253E%250A%2509%2509%253C%252Fdiv%253E%250A%2509%2509%253Cdiv%2520class%253D%2522card_horizontal_text%2520flex_column%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card_tex%2520left_space%2522%253EReal%2520Madrid%2520Unisex%2520Sweatshirt%2520for%2520Men%252FWomen%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card_subtext%2520left_space%2522%253ECotton%2520Super%2520Combed%2520Fabric%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card_text%2520card_price%2520left_space%2522%253E%25E2%2582%25B92%252C999%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522text_line_through%2522%253E%25E2%2582%25B94%252C999%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn_secondary%2520right_space%2522%253EGo%2520to%2520Cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn_primary%2520right_space%2522%253ERemove%2520from%2520Wishlist%253C%252Fbutton%253E%250A%2509%2509%253C%252Fdiv%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
-                    style="width: 856px; height: 398px; border:0; transform: scale(1); overflow:hidden;"
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=material&wt=none&l=css&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=20px&ph=16px&ln=false&fl=1&fm=Droid+Sans+Mono&fs=12px&lh=147%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card_grid%2522%253E%250A%2509%253Cdiv%253E%250A%2509%2509%253Cimg%2520class%253D%2522img_responsive%2522%2520src%253D%2522%252Fassets%252Fshop.jpg%2522%2520alt%253D%2522shopping-item%2522%253E%250A%2509%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522card_horizontal_text%2520flex_column%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card_tex%2520left_space%2522%253EReal%2520Madrid%2520Unisex%2520Sweatshirt%2520for%2520Men%252FWomen%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card_subtext%2520left_space%2522%253ECotton%2520Super%2520Combed%2520Fabric%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card_text%2520card_price%2520left_space%2522%253E%25E2%2582%25B92%252C999%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522text_line_through%2522%253E%25E2%2582%25B94%252C999%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn_secondary%2520right_space%2522%253EGo%2520to%2520Cart%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn_primary%2520right_space%2522%253ERemove%2520from%2520Wishlist%253C%252Fbutton%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+                    style="width: 659px; height: 396px; border:0; transform: scale(1); overflow:hidden;"
                     sandbox="allow-scripts allow-same-origin">
                 </iframe>
             </div>
@@ -177,23 +186,27 @@
                 You need to wrap element that need to be overlay and on which it is to be overlayed in a single div.
             </p>
 
-            <div class="card_image ">
-                <div class="card_vertical flex_column">
-                    <div class="card_vertical_info">
-                        <img class="img_responsive" src="/assets/shop.jpg" alt="shopping-item">
-                        <p class="card_text">Real Madrid Unisex Sweatshirt for Men/Women</p>
-                        <p class="card_subtext">Cotton Super Combed Fabric</p>
-                        <p class="card_text card_price">₹2,999
-                        <span class="text_line_through">₹4,999</span>
-                          </p>
-                        <button class="btn btn_secondary">ADD TO CART</button>
-                    </div>
-                    <div class="card_image card_overlay">
-                        <p class="card_overlay_text">OUT OF STOCK</p>
+            <div class="card_outer_box">
+
+                <div class="card_image ">
+                    <div class="card_vertical flex_column">
+                        <div class="card_vertical_info">
+                            <img class="img_responsive adjust_image" src="/assets/shop.jpg" alt="shopping-item">
+                            <p class="card_text">Real Madrid Unisex Sweatshirt for Men/Women</p>
+                            <p class="card_subtext">Cotton Super Combed Fabric</p>
+                            <p class="card_text card_price">₹2,999
+                            <span class="text_line_through">₹4,999</span>
+                              </p>
+                            <button class="btn btn_secondary">ADD TO CART</button>
+                        </div>
+                        <div class="card_image card_overlay">
+                            <p class="card_overlay_text">OUT OF STOCK</p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
+            </div>
+            
             <div class="display_code">
                 <iframe
                     src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=material&wt=none&l=css&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Droid+Sans+Mono&fs=14.5px&lh=147%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card_image%2520%2522%253E%250A%2509%253Cdiv%2520class%253D%2522card_vertical%2520flex_column%2522%253E%250A%2509%2509%253Cdiv%2520class%253D%2522card_vertical_info%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520class%253D%2522img_responsive%2522%2520src%253D%2522%252Fassets%252Fshop.jpg%2522%2520alt%253D%2522shopping-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card_text%2522%253EReal%2520Madrid%2520Unisex%2520Sweatshirt%2520for%2520Men%252FWomen%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card_subtext%2522%253ECotton%2520Super%2520Combed%2520Fabric%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522card_text%2520card_price%2522%253E%25E2%2582%25B92%252C999%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522text_line_through%2522%253E%25E2%2582%25B94%252C999%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn%2520btn_secondary%2522%253EADD%2520TO%2520CART%253C%252Fbutton%253E%250A%2509%2509%253C%252Fdiv%253E%250A%2509%2509%253Cdiv%2520class%253D%2522card_image%2520card_overlay%2522%253E%250A%2509%2509%2509%253Cp%2520class%253D%2522card_overlay_text%2522%253EOUT%2520OF%2520STOCK%253C%252Fp%253E%250A%2509%2509%253C%252Fdiv%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"

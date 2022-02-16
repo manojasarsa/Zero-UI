@@ -1,10 +1,16 @@
 @import url("/docs/main.css");
 
+.card_outer_box {
+    border: 1px solid var(--light-grey-color);
+    margin: 0 auto;
+}
+
+/* Simple Text Card */
+
 .card {
     min-height: fit-content;
     width: 60%;
-    box-shadow: 0px 0px 5px 5px var(--shadow-color);
-    border-radius: 5px;    
+    border-radius: 2px;    
 }
 
 .card_container {
@@ -15,10 +21,11 @@
     font-size: 1rem;
 }
 
+/* Vertical Image Card */
+
 .card_vertical {
     position: relative;
-    box-shadow: 0px 0px 5px 5px var(--shadow-color);
-    border-radius: 5px;
+    border-radius: 2px;
 }
 
 .card_vertical_info {
@@ -28,20 +35,15 @@
     flex-wrap: wrap;
 }
 
-.card_horizontal {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    width: 100%;
-    max-width: 500px;
-    column-gap: 1rem;
-    box-shadow: 0px 0px 5px 5px var(--shadow-color);
-    border-radius: 5px;   
+/* Horizontal Card */
+
+.card_grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px,1fr));
+    place-items: center;
 }
 
-.card_horizontal .card_horizontal_text {
-    align-self: center;
-}
+/* Cards with text overlay */
 
 .card_overlay {
     position: absolute;
@@ -70,13 +72,16 @@
     transition: all 0.2s ease-in-out;
 }
 
-.flex_column {
-    display: flex;
-    flex-direction: column;
-}
+/* Common CSS */
 
 .card_image {
     display: flex;
+}
+
+.card_image .adjust_image {
+    height: 40vh;
+    width: 100%;
+    object-fit: contain;
 }
 
 .card_text {
@@ -90,21 +95,11 @@
     font-size: 0.7em;
 }
 
-.card_price {
-    margin-top: 0.5em;
-}
-
 .text_line_through {
     color: var(--grey-color);
     text-decoration: line-through;
     font-size: 0.7em;
     padding-left: 0.2em;
-}
-
-.card_image .adjust_image {
-    height: 40vh;
-    width: 100%;
-    object-fit: contain;
 }
 
 .card_heart_icon {
@@ -117,6 +112,10 @@
 
 .card_heart_icon:hover {
     color: var(--red-color);
+}
+
+.card_price {
+    margin-top: 0.5em;
 }
 
 .left_space {

@@ -1,7 +1,7 @@
 @import url("/docs/main.css");
 
 .btn {
-    margin: 0.5em;
+    margin: 0.5rem;
     padding: 0.5em;
     border: 2px solid var(--primary-color);
     border-radius: 7px;
@@ -95,6 +95,16 @@
 }
 
 .btn_floating {
+    width: 3vw;
+    height: 6vh;
     border-radius: 50%;
-    font-size: 1em;
+    font-size: 0.5rem;
+}
+
+.icon_text {
+    padding-top: 0.2rem;
+}
+
+.btn_link_text {
+    color: var(--primary-color);
 }
