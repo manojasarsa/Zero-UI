@@ -1,26 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap');
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Outlined");
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Round");
-
 :root {
-    --primary-color: #111111;
-    --secondary-color: #ff3f6c;
-    --light-pink-color: #ff6589;
-    --success-color: #1b7052;
-    --success-background-color: #84f1c9;
-    --alert-color: #dc3545;
-    --alert-background-color: #fcc5c5;
-    --warning-color: #ff9204;
-    --warning-background-color: #ffe7c5;
-    --info-color: #29438b;
-    --info-background-color: #7fd2e6;
-    --white-color: #fff;
-    --shadow-color: #f3f4f6;
-    --light-grey-color: #6b7280;
-    --grey-color: #808080;
-    --line-color: #d1d5db;
-    --red-color: #ff0000;
+
+  /* colors */
+  --primary-color: #111111;
+  --secondary-color: #ff3f6c;
+  --success-color: #1b7052;
+  --success-background-color: #84f1c9;
+  --alert-color: #dc3545;
+  --alert-background-color: #fcc5c5;
+  --warning-color: #ff9204;
+  --warning-background-color: #ffe7c5;
+  --info-color: #29438b;
+  --info-background-color: #7fd2e6;
+  --grey-color: #808080;
+  --light-grey-color: #6b7280;
+  --red-color: #ff0000;
+  --blue-color: blue;
+  --white-color: #fff;
+  --shadow-color: #f3f4f6;
+  --line-color: #d1d5db;
+  --blur-color: rgba(255, 255, 255, 0.301);
+
+  /* font-family */
+  --ff-serif: "Lora", serif;
+  --ff-cursive: 'Marck Script', cursive;
+
+  /* transition */
+  --trans-2: all 0.2s ease-in-out;
+  --trans-5: all 0.5s ease-in-out;
+  --trans-4: all 0.4s ease-in-out;
+
+  /* font-weights */
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+  
 }
 
 * {
@@ -29,40 +43,36 @@
   margin: 0;
 }
 
-html:focus-within {
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
+  font-size: 100%;
 }
 
 body {
-    font-family: 'Roboto' , sans-serif;
-    min-height: 100vh;
-    text-rendering: optimizeSpeed;
-    line-height: 1.5;
+  min-height: 100vh;
+  font-family: var(--ff-serif);
 }
 
 ul[role='list'],
-ol[role='list'], li{
+ol[role='list'],
+li {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
 
 img,
-picture {
-  max-width: 100%;
-  /* display: block; */
+picture,
+iframe {
+  max-inline-size: 100%;
+  block-size: auto;
 }
 
-a {
-    text-decoration: none;
-}
-    
 input,
 button,
 textarea,
 select {
   font: inherit;
-}
-
-h1, h2, h3, h4, h5, h6, p {
-  color: var(--primary-color);
 }

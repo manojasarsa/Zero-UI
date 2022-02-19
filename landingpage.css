@@ -1,4 +1,4 @@
-@import url("/docs/main.css");
+@import '/docs/main.css';
 
 body {
     min-height: fit-content;
@@ -7,28 +7,23 @@ body {
 /* Navigation */
 
 .nav {
-    width: 100vw;
-    display: block;
-    border: 1px solid var(--white-color);
-    box-shadow: 0px 2px 10px 1px var(--shadow-color);
-    padding: 1rem;
     position: fixed;
     top: 0;
-    z-index: 4;
-    background-color: var(--white-color);
+    left: 0;
+    right: 0;
+    border-bottom: 0;
+    z-index: 5;
+    padding: 0.5rem;
+    box-shadow: 0px 2px 10px 1px var(--shadow-color);
 }
 
 .nav_container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
+    padding: 1rem;
 }
 
 .nav_list {
-    width: 12vw;
-    display: flex;
-    justify-content: space-between;
+    width: 100%;
+    flex-basis: 50%;
 }
 
 .nav_list_icons {
@@ -56,37 +51,29 @@ body {
     color: var(--secondary-color);
 }
 
-/* Container */
+/* Main Content */
 
 .container {
-    background-color: var(--white-color);
-    display: flex;
     width: 80vw;
     margin: 12rem auto;  
     text-align: center;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
 }
 
 .container h1 {
     font-size: 4rem;
-    font-weight: bold;
+    font-weight: var(--fw-bold);
     margin-bottom: 1rem;
 }
 
 .container h3 {
     line-height: 1.7;
     font-size: 1.3rem;
-    font-weight: 400;
+    font-weight: var(--fw-regular);
     margin-top: 1rem;
 }
 
 .container_button {
     margin-top: 1rem;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -97,8 +84,8 @@ body {
     border-radius: 7px;
     letter-spacing: 0.2rem;
     cursor: pointer;
-    transition: all 0.5s ease-in-out;
-    font-weight: bold;
+    transition: var(--trans-5);
+    font-weight: var(--fw-bold);
 }
 
 .container_btn_prim {
@@ -107,7 +94,6 @@ body {
 }
 
 .container_btn_sec {
-    background-color: var(--white-color);
     color: var(--secondary-color);
 }
 
@@ -122,4 +108,3 @@ body {
 .span {
     color: var(--secondary-color);
 }
-
