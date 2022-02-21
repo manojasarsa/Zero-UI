@@ -1,13 +1,8 @@
-@import url("/docs/main.css");
-
 .toast {
     background-color: var(--primary-color);
     color: var(--white-color);
     padding: 0.5em;
     width: fit-content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 1rem;
     display: none;
 }
@@ -15,7 +10,7 @@
 .toast_position {
     position: fixed;
     display: flex;
-    z-index: 4;
+    z-index: 8;
 }
 
 .toast_active_leading {
@@ -36,9 +31,13 @@ button.retry_btn {
 }
 
 .btn_toast {
-    width: fit-content;
+    width: auto;
 }
 
 .toast i {
     cursor: pointer;
+}
+
+.toast_btn_container {
+    width: 20rem;
 }

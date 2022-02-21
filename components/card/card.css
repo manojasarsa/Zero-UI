@@ -1,5 +1,3 @@
-@import url("/docs/main.css");
-
 .card_outer_box {
     border: 1px solid var(--light-grey-color);
     margin: 0 auto;
@@ -8,12 +6,12 @@
 /* Simple Text Card */
 
 .card {
-    min-height: fit-content;
-    width: 60%;
     border-radius: 2px;    
 }
 
 .card_container {
+    height: 12rem;
+    width: 10rem;
     margin: 1rem 1rem 0 1rem;
 }
 
@@ -30,9 +28,7 @@
 
 .card_vertical_info {
     position: relative;
-    justify-content: flex-start;
     margin: 0.5em;
-    flex-wrap: wrap;
 }
 
 /* Horizontal Card */
@@ -47,9 +43,6 @@
 
 .card_overlay {
     position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background: var(--white-color);
     opacity: 0.6;
     z-index: 2;
@@ -61,7 +54,7 @@
 
 .card_overlay_text {
     font-size: 4em;
-    font-weight: 900;
+    font-weight: var(--fw-bold);
     background-color: var(--secondary-color);
     text-align: center;
 }
@@ -69,14 +62,10 @@
 .card_overlay_text:hover {
     background-color: var(--primary-color);
     color: var(--secondary-color);
-    transition: all 0.2s ease-in-out;
+    transition: var(--trans-2);
 }
 
 /* Common CSS */
-
-.card_image {
-    display: flex;
-}
 
 .card_image .adjust_image {
     height: 40vh;
@@ -86,7 +75,7 @@
 
 .card_text {
     font-size: 0.8em;
-    font-weight: 600;
+    font-weight: var(--fw-semi-bold);
     margin-top: 0.8em;
 }
 
@@ -102,16 +91,35 @@
     padding-left: 0.2em;
 }
 
-.card_heart_icon {
+/* Icons */
+.card_vertical_info > .icon {
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: var(--primary-color);
     position: absolute;
-    color: var(--white-color);
-    right: 1.5rem;
-    top: 0.8rem;
-    font-size: 1.2rem;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1;
 }
 
-.card_heart_icon:hover {
+.card_vertical_info > .icon:hover {
     color: var(--red-color);
+}
+
+/* Sale Pill */
+.pill {
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    padding: 0.25rem 1.5rem;
+    color: var(--white-color);
+    background-color: var(--info-color);
+    font-size: 0.8rem;
+}
+
+/* Cards with shadow */
+.cards_shadow {
+    box-shadow: 1px 1px 1px 5px var(--shadow-color);
 }
 
 .card_price {
