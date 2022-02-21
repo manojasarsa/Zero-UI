@@ -10,8 +10,8 @@
 }
 
 .modal {
-    width: 35vw;
-    height: 20vw;
+    width: 50%;
+    height: 35%;
     row-gap: 1rem;
     border: 1px solid var(--primary-color);
     background-color: var(--line-color);

@@ -1,24 +1,18 @@
 .navigation {
     background-color: var(--shadow-color);
     border: 1px solid var(--light-grey-color);
-    padding: 1.2rem 1rem;
+    padding: 1.2rem 0.5rem;
     border-radius: 0.3rem;
 }
 
 .nav_logo {
-    font-size: 2rem;
+    font-size: 1rem;
     color: var(--secondary-color);
-}
-
-.nav_center {
-    flex-basis: 30%;
-    border-radius: 2rem;
 }
 
 .input_search {
     border: 1px solid var(--light-grey-color);
     padding-left: 0.5rem;
-    border-radius: 1rem;
 }
 
 .navigation i {
@@ -30,8 +24,8 @@
 }
 
 .login_button {
-    margin-right: 1em;
-    padding: 0.6em 1em;
+    margin-right: 0.3rem;
+    padding: 0.6rem 0.3rem;
 }
 
 .nav_right .badge_icon {

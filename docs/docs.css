@@ -122,20 +122,12 @@
         width: 100%;
     }
 
-    .doc_main_container {
-        margin: 1rem 1rem; 
+    html {
+        font-size: 10px;
     }
 
-    .doc_main_head {
-        font-size: 1rem;
-    }
-    
-    .doc_main_desc {
-        margin: 1rem 0;
-        font-size: 0.8rem;
-    }
-
-    .nav_bottom a {
-        font-size: 1rem;
+    .container {
+        width: 100%;
+        padding: 0 1rem;
     }
 }

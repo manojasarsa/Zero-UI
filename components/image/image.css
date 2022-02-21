@@ -1,7 +1,5 @@
 .image_container {
     border: 1px solid var(--shadow-color);
-    width: 30rem;
-    height: 30rem;
 }
 
 .img_responsive {
