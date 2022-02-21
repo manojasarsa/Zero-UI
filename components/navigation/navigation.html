@@ -5,12 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/components/navigation/navigation.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/docs/main.css">
-    <script src="https://kit.fontawesome.com/b2c3fdb829.js" crossorigin="anonymous"></script>
     <title>Navigation</title>
 </head>
 
@@ -19,10 +14,10 @@
     <!-- Nav Bar -->
 
     <nav class="nav">
-        <div class="nav_container">
+        <div class="nav_container flex flex_align_center flex_justify_between">
             <a class="nav_heading" href="/">Zero<span class="span">+</span>1 UI</a>
             <div class="nav_list_container">
-                <ul class="nav_list">
+                <ul class="nav_list flex flex_justify_between">
                     <li class="nav_list_icons">
                         <a class="nav_icons" target="_blank" href="https://github.com/manojasarsa"><i
                                 class="fab fa-github fa-2x"></i></a>
@@ -40,89 +35,98 @@
         </div>
     </nav>
 
-    <div class="doc_sidebar">
-        <div class="doc_heading">Getting Started</div>
-        <div class="doc_sidebar_list">
-            <a class="doc_comp_link" href="/components/getting-started.html">Installation</a>
+    <!-- Doc Wrapper -->
+
+    <div class="document_wrapper flex flex_row">
+
+        <!-- Side Bar -->
+
+        <div class="doc_sidebar flex flex_col">
+            <div class="doc_sidebar_heading">Getting Started</div>
+            <div class="doc_sidebar_list">
+                <a class="doc_comp_link" href="/components/getting-started.html">Installation</a>
+            </div>
+            <div class="doc_sidebar_heading">Components</div>
+            <ul>
+                <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/alert/alert.html">Alert</a></li>
+                <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/avatar/avatar.html">Avatar</a>
+                </li>
+                <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/badge/badge.html">Badge</a></li>
+                <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/button/button.html">Button</a>
+                </li>
+                <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/card/card.html">Card</a></li>
+                <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/image/image.html">Image</a></li>
+                <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/input/input.html">Input</a></li>
+
+                <li class="doc_sidebar_list"><a class="doc_comp_link"
+                        href="/components/text-utilities/text-utilities.html">Text Utilities</a></li>
+                <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/lists/lists.html">Lists</a></li>
+                <li class="doc_sidebar_list"><a class="doc_comp_link"
+                        href="/components/navigation/navigation.html">Navigation</a></li>
+                <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/modal/modal.html">Modal</a></li>
+                <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/rating/rating.html">Rating</a>
+                </li>
+                <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/toast/toast.html">Toast</a></li>
+                <li class="doc_sidebar_list"><a class="doc_comp_link"
+                        href="/components/simplified-grid/simplified-grid.html">Simplified Grid</a></li>
+                <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/slider/slider.html">Slider</a>
+                </li>
+            </ul>
         </div>
-        <div class="doc_heading">Components</div>
-        <ul>
-            <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/avatar/avatar.html">Avatar</a></li>
-            <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/alert/alert.html">Alert</a></li>
-            <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/badge/badge.html">Badge</a></li>
-            <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/button/button.html">Button</a></li>
-            <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/card/card.html">Card</a></li>
-            <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/image/image.html">Image</a></li>
-            <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/input/input.html">Input</a></li>
 
-            <li class="doc_sidebar_list"><a class="doc_comp_link"
-                    href="/components/text-utilities/text-utilities.html">Text Utilities</a></li>
-            <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/lists/lists.html">Lists</a></li>
-            <li class="doc_sidebar_list"><a class="doc_comp_link"
-                    href="/components/navigation/navigation.html">Navigation</a></li>
-            <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/modal/modal.html">Modal</a></li>
-            <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/rating/rating.html">Rating</a></li>
-            <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/toast/toast.html">Toast</a></li>
-            <li class="doc_sidebar_list"><a class="doc_comp_link"
-                    href="/components/simplified-grid/simplified-grid.html">Simplified Grid</a></li>
-        </ul>
-    </div>
+        <!-- Main Content -->
 
-    <!-- Main Content -->
+        <div class="doc_content flex flex_col flex_justify_start flex_wrap">
 
-    <div class="doc_content">
-
-        <div class="doc_main_container">
-            <h2 class="doc_main_head">Navigation</h2>
-            <p class="doc_main_desc">
-                Navigation bar is used to navigate through the web apps or websites. This navigation component is responsive. It is a hamburger menu in medium and small devices.
-            </p>
-            <div class="display_code">
-                <iframe
-                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=material&wt=none&l=css&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Droid+Sans+Mono&fs=14.5px&lh=147%25&si=false&es=2x&wm=false&code=%253Clink%2520rel%253D%2522stylesheet%2522%2520%250Ahref%253D%2522https%253A%252F%252Fzero-ui.netlify.app%252Fcomponents%252Fnavigation%252Fnavigation.css%2522%253E"
-                    style="width: 664px; height: 117px; border:0; transform: scale(1); overflow:hidden;"
+            <div class="doc_main_container flex flex_col flex_justify_start flex_wrap">
+                <h2 class="doc_main_head">Navigation</h2>
+                <p class="doc_main_desc">
+                    Navigation bar is used to navigate through the web apps or websites. This navigation component is responsive. It is a hamburger menu in medium and small devices.
+                </p>
+      
+                <iframe class="display_code"
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=material&wt=sharp&l=auto&width=680&ds=false&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Droid+Sans+Mono&fs=11.5px&lh=147%25&si=false&es=2x&wm=false&code=%2520%253Clink%2520rel%253D%2522stylesheet%2522%2520%250A%2520%2520href%253D%2522https%253A%252F%252Fzero-ui.netlify.app%252F%250A%2520%2520%2520components%252Fnavigation%252Fnavigation.css%2522%253E"
                     sandbox="allow-scripts allow-same-origin">
                 </iframe>
-            </div>
 
-            <h2 class="doc_main_head">Desktop (Simple)</h2>
-            <p class="doc_main_desc">
-                We have added a basic navigation for desktop view.
-            </p>
+                <h2 class="doc_main_head">Desktop (Simple)</h2>
+                <p class="doc_main_desc">
+                    We have added a basic navigation for desktop view.
+                </p>
 
-            <div class="navigation">
-                <div class="nav_left">
-                    <h2 class="nav_logo">Zero+1 UI</h2>
-                </div>
-
-                <div class="nav_center">
-                    <input type="search" class="input input_search" placeholder="Search" />
-                </div>
-
-                <div class="nav_right">
-                    <div class="badge_container badge_icon">
-                        <i class="fas fa-heart"></i>
-                        <span class="badge_icon_num badge_status"> 3 </span>
+                <div class="navigation flex flex_justify_between flex_align_center">
+                    <div class="nav_left">
+                        <h2 class="nav_logo">Zero+1 UI</h2>
                     </div>
 
-                    <div class="badge_container badge_icon">
-                        <i class="fas fa-shopping-cart"></i>
-                        <span class="badge_icon_num badge_status"> 4 </span>
+                    <div class="nav_center">
+                        <input type="search" class="input input_search" placeholder="Search" />
                     </div>
 
-                    <button class="btn btn_secondary login_button ">Login</button>
-                </div>
-            </div>
+                    <div class="nav_right flex flex_justify_between flex_align_center">
 
-            <div class="display_code">
-                <iframe
-                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=material&wt=none&l=css&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Droid+Sans+Mono&fs=14.5px&lh=147%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522navigation%2522%253E%250A%2509%253Cdiv%2520class%253D%2522nav_left%2520logo%2522%253E%250A%2509%2509%253Ch2%2520class%253D%2522nav_logo%2522%253EZero%252B1%2520UI%253C%252Fh2%253E%250A%2509%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522nav_center%2520searchbar%2522%253E%250A%2509%2509%253Cinput%2520type%253D%2522search%2522%2520class%253D%2522input%2520input_search%2522%2520placeholder%253D%2522Search%2522%2520%252F%253E%250A%2509%253C%252Fdiv%253E%250A%2509%253Cdiv%2520class%253D%2522nav_right%2522%253E%250A%2509%2509%253Cdiv%2520class%253D%2522badge_container%2520badge_icon%2522%253E%250A%2509%2509%2509%253Ci%2520class%253D%2522fas%2520fa-heart%2522%253E%253C%252Fi%253E%250A%2509%2509%2509%253Cspan%2520class%253D%2522badge_icon_num%2520badge_status%2522%253E%25203%2520%253C%252Fspan%253E%250A%2509%2509%253C%252Fdiv%253E%250A%250A%2509%2509%253Cdiv%2520class%253D%2522badge_container%2520badge_icon%2522%253E%250A%2509%2509%2509%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%250A%2509%2509%2509%253Cspan%2520class%253D%2522badge_icon_num%2520badge_status%2522%253E%25204%2520%253C%252Fspan%253E%250A%2509%2509%253C%252Fdiv%253E%250A%2509%2509%253Cbutton%2520class%253D%2522btn%2520btn_primary%2520login-button%2520text_md%2522%253ELogin%253C%252Fbutton%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
-                    style="width: 726px; height: 500px; border:0; transform: scale(1); overflow:hidden;"
+                        <div class="badge_container badge_icon">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="badge_icon_num badge_status flex flex_justify_center flex_align_center">2</span>
+                        </div>
+
+                        <button class="btn btn_secondary login_button ">Login</button>
+                    </div>
+                </div>
+
+                <iframe class="display_code"
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=material&wt=sharp&l=auto&width=680&ds=false&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Droid+Sans+Mono&fs=12px&lh=147%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522navigation%2520flex%2520flex_justify_between%2520flex_align_center%2522%253E%250A%2509%253Cdiv%2520class%253D%2522nav_left%2522%253E%250A%2509%2509%253Ch2%2520class%253D%2522nav_logo%2522%253EZero%252B1%2520UI%253C%252Fh2%253E%250A%2509%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522nav_center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522search%2522%2520class%253D%2522input%2520input_search%2522%2520placeholder%253D%2522Search%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522nav_right%2520flex%2520flex_justify_between%2520flex_align_center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge_container%2520badge_icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-heart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge_icon_num%2520badge_status%2522%253E%25203%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2509%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522badge_container%2520badge_icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522badge_icon_num%2520badge_status%2522%253E%25204%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%250A%2509%2509%253Cbutton%2520class%253D%2522btn%2520btn_secondary%2520login_button%2520%2522%253ELogin%253C%252Fbutton%253E%250A%2509%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
                     sandbox="allow-scripts allow-same-origin">
                 </iframe>
-            </div>
 
+                <div class="nav_bottom flex flex_justify_between">
+                    <a href="/components/lists/lists.html"> < Lists</a>
+                    <a href="/components/modal/modal.html">Modal ></a>
+                </div>
+
+            </div>
         </div>
+
     </div>
 
 </body>

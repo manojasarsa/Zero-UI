@@ -1,13 +1,8 @@
-@import url("/docs/main.css");
-
 .alert_box {
     width: 100%;
-    display: flex;
-    flex-direction: column;
 }
 
 .alert_success {
-    display: flex;
     margin: 1rem;
     padding: 1rem;
     color: var(--success-color);
@@ -15,7 +10,6 @@
 }
 
 .alert_error {
-    display: flex;
     margin: 1rem;
     padding: 1rem;
     color: var(--alert-color);
@@ -23,7 +17,6 @@
 }
 
 .alert_warning {
-    display: flex;
     margin: 1rem;
     padding: 1rem;
     color: var(--warning-color);
@@ -31,7 +24,6 @@
 }
 
 .alert_info {
-    display: flex;
     margin: 1rem;
     padding: 1rem;
     color: var(--info-color);

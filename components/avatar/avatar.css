@@ -1,11 +1,8 @@
-@import url("/docs/main.css");
-
 .avatar {
     border-radius: 50%;
     height: 8em;
     width: 8em;
     object-fit: cover;
-    
 }
 
 .avatar_lg {
@@ -29,8 +26,5 @@
 }
 
 .avatar_sizes {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
     column-gap: 1.5rem;
 }

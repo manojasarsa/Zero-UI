@@ -1,9 +1,5 @@
-@import url("/docs/main.css");
-
 .image_container {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    border: 1px solid var(--shadow-color);
 }
 
 .img_responsive {

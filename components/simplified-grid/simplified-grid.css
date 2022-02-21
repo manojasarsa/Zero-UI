@@ -1,5 +1,3 @@
-@import url("/docs/main.css");
-
 .grid_container {
     display: grid;
     background-color: var(--light-grey-color);

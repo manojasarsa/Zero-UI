@@ -5,12 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/components/toast/toast.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/docs/main.css">
-    <script src="https://kit.fontawesome.com/b2c3fdb829.js" crossorigin="anonymous"></script>
     <title>Toast</title>
 </head>
 
@@ -19,10 +14,10 @@
     <!-- Nav Bar -->
 
     <nav class="nav">
-        <div class="nav_container">
+        <div class="nav_container flex flex_align_center flex_justify_between">
             <a class="nav_heading" href="/">Zero<span class="span">+</span>1 UI</a>
             <div class="nav_list_container">
-                <ul class="nav_list">
+                <ul class="nav_list flex flex_justify_between">
                     <li class="nav_list_icons">
                         <a class="nav_icons" target="_blank" href="https://github.com/manojasarsa"><i
                                 class="fab fa-github fa-2x"></i></a>
@@ -40,91 +35,104 @@
         </div>
     </nav>
 
-    <div class="doc_sidebar">
-        <div class="doc_heading">Getting Started</div>
-        <div class="doc_sidebar_list">
-            <a class="doc_comp_link" href="/components/getting-started.html">Installation</a>
+    <!-- Doc Wrapper -->
+
+    <div class="document_wrapper flex flex_row">
+
+        <!-- Side Bar -->
+
+        <div class="doc_sidebar flex flex_col">
+            <div class="doc_sidebar_heading">Getting Started</div>
+            <div class="doc_sidebar_list">
+                <a class="doc_comp_link" href="/components/getting-started.html">Installation</a>
+            </div>
+            <div class="doc_sidebar_heading">Components</div>
+            <ul>
+                <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/alert/alert.html">Alert</a></li>
+                <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/avatar/avatar.html">Avatar</a>
+                </li>
+                <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/badge/badge.html">Badge</a></li>
+                <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/button/button.html">Button</a>
+                </li>
+                <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/card/card.html">Card</a></li>
+                <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/image/image.html">Image</a></li>
+                <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/input/input.html">Input</a></li>
+
+                <li class="doc_sidebar_list"><a class="doc_comp_link"
+                        href="/components/text-utilities/text-utilities.html">Text Utilities</a></li>
+                <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/lists/lists.html">Lists</a></li>
+                <li class="doc_sidebar_list"><a class="doc_comp_link"
+                        href="/components/navigation/navigation.html">Navigation</a></li>
+                <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/modal/modal.html">Modal</a></li>
+                <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/rating/rating.html">Rating</a>
+                </li>
+                <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/toast/toast.html">Toast</a></li>
+                <li class="doc_sidebar_list"><a class="doc_comp_link"
+                        href="/components/simplified-grid/simplified-grid.html">Simplified Grid</a></li>
+                <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/slider/slider.html">Slider</a>
+                </li>
+            </ul>
         </div>
-        <div class="doc_heading">Components</div>
-        <ul>
-            <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/avatar/avatar.html">Avatar</a></li>
-            <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/alert/alert.html">Alert</a></li>
-            <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/badge/badge.html">Badge</a></li>
-            <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/button/button.html">Button</a></li>
-            <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/card/card.html">Card</a></li>
-            <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/image/image.html">Image</a></li>
-            <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/input/input.html">Input</a></li>
 
-            <li class="doc_sidebar_list"><a class="doc_comp_link"
-                    href="/components/text-utilities/text-utilities.html">Text Utilities</a></li>
-            <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/lists/lists.html">Lists</a></li>
-            <li class="doc_sidebar_list"><a class="doc_comp_link"
-                    href="/components/navigation/navigation.html">Navigation</a></li>
-            <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/modal/modal.html">Modal</a></li>
-            <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/rating/rating.html">Rating</a></li>
-            <li class="doc_sidebar_list"><a class="doc_comp_link" href="/components/toast/toast.html">Toast</a></li>
-            <li class="doc_sidebar_list"><a class="doc_comp_link"
-                    href="/components/simplified-grid/simplified-grid.html">Simplified Grid</a></li>
-        </ul>
-    </div>
+        <!-- Main Content -->
 
-    <!-- Main Content -->
+        <div class="doc_content flex flex_col flex_justify_start flex_wrap">
 
-    <div class="doc_content">
-
-        <div class="doc_main_container">
-            <h2 class="doc_main_head">Toast/Notify/Snackbar</h2>
-            <p class="doc_main_desc">
-                This component can be used for toast or snackbar component. Toast is mostly used to show feedback message. Snackbar is to used show message that need user action.
-            </p>
-            <div class="display_code">
-                <iframe
-                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=material&wt=none&l=css&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Droid+Sans+Mono&fs=14.5px&lh=147%25&si=false&es=2x&wm=false&code=%253Clink%2520rel%253D%2522stylesheet%2522%2520%250Ahref%253D%2522https%253A%252F%252Fzero-ui.netlify.app%252Fcomponents%252Ftoast%252Ftoast.css%2522%253E"
-                    style="width: 578px; height: 117px; border:0; transform: scale(1); overflow:hidden;"
+            <div class="doc_main_container flex flex_col flex_justify_start flex_wrap">
+                <h2 class="doc_main_head">Toast/Notify/Snackbar</h2>
+                <p class="doc_main_desc">
+                    This component can be used for toast or snackbar component. Toast is mostly used to show feedback message. Snackbar is to used show message that need user action.
+                </p>
+                
+                <iframe class="display_code"
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=material&wt=sharp&l=auto&width=680&ds=false&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Droid+Sans+Mono&fs=10px&lh=147%25&si=false&es=2x&wm=false&code=%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fzero-ui.netlify.app%252Fcomponents%252Ftoast%252Ftoast.css%2522%253E%250A"
                     sandbox="allow-scripts allow-same-origin">
                 </iframe>
-            </div>
 
-            <h2 class="doc_main_head">Example of Toast</h2>
-            <p class="doc_main_desc">
-                Toast display messages related to an interaction happened between user and the website. They usually stay on the screen for 2-3 seconds and then disappear.
-                Toast can be used to show success messages, warnings or errors.
-            </p>
+                <h2 class="doc_main_head">Example of Toast</h2>
+                <p class="doc_main_desc">
+                    Toast display messages related to an interaction happened between user and the website. They usually stay on the screen for 2-3 seconds and then disappear.
+                    Toast can be used to show success messages, warnings or errors.
+                </p>
 
-            <h2 class="doc_main_head">Example of Leading Toast</h2>
-            <button class="btn btn_secondary btn_toast" id="btn_leading">Leading</button>
+                <h2 class="doc_main_head">Example of Leading Toast</h2>
+                <div class="toast_btn_container">
+                    <button class="btn btn_secondary btn_toast" id="btn_leading">Leading</button>
+                </div>
+                
+                <h2 class="doc_main_head">Example of Top-Right Toast</h2>
+                <div class="toast_btn_container">
+                    <button class="btn btn_secondary btn_toast" id="btn_top_right">Top-Right</button>
+                </div>
 
-            <h2 class="doc_main_head">Example of Top-Right Toast</h2>
-            <button class="btn btn_secondary btn_toast" id="btn_top_right">Top-Right</button>
+                <div class="toast flex flex_justify_center flex_align_center" id="toast_box">
+                    Can't open link. Retry after 3 seconds.
+                    <button class="retry_btn">Retry</button>
+                    <i class="fas fa-times-circle component_icons"></i>
+                </div>
 
-            <div class="toast" id="toast_box">
-                Can't open link. Retry after 3 seconds.
-                <button class="retry_btn">Retry</button>
-                <i class="fas fa-times-circle component_icons"></i>
-            </div>
-
-            <div class="display_code">
-                <iframe
-                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=material&wt=none&l=css&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Droid+Sans+Mono&fs=14.5px&lh=147%25&si=false&es=2x&wm=false&code=%253Ch2%2520class%253D%2522doc_main_head%2522%253EExample%2520of%2520Leading%2520Toast%253C%252Fh2%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn_secondary%2520btn_toast%2522%2520id%253D%2522btn_leading%2522%253ELeading%253C%252Fbutton%253E%250A%250A%253Ch2%2520class%253D%2522doc_main_head%2522%253EExample%2520of%2520Top-Right%2520Toast%253C%252Fh2%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn_secondary%2520btn_toast%2522%2520id%253D%2522btn_top_right%2522%253ETop-Right%253C%252Fbutton%253E%250A%250A%253Cdiv%2520class%253D%2522toast%2522%2520id%253D%2522toast_box%2522%253E%250A%2509Can%27t%2520open%2520link.%2520Retry%2520after%25203%2520seconds.%250A%2509%253Cbutton%2520class%253D%2522retry_btn%2522%253ERetry%253C%252Fbutton%253E%250A%2509%253Ci%2520class%253D%2522fas%2520fa-times-circle%2520component_icons%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E"
-                    style="width: 743px; height: 309px; border:0; transform: scale(1); overflow:hidden;"
+                <iframe class="display_code" src="https://carbon.now.sh/embed/pI2tiVWqmP3Vn8CFO4Ih"
                     sandbox="allow-scripts allow-same-origin">
                 </iframe>
-            </div>
 
-            <h2 class="doc_main_head">JavaScript</h2>
-            <p class="doc_main_desc">
-                Do you want to make it functional? Use below below JavaScript code as well.
-            </p>
+                <h2 class="doc_main_head">JavaScript</h2>
+                <p class="doc_main_desc">
+                    Do you want to make it functional? Use below below JavaScript code as well.
+                </p>
 
-            <div class="display_code">
-                <iframe
-                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=material&wt=none&l=javascript&width=680&ds=true&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Droid+Sans+Mono&fs=14.5px&lh=147%25&si=false&es=2x&wm=false&code=const%2520liveLeadingBtn%2520%253D%2520document.querySelector%28%2522%2523btn_leading%2522%29%253B%250Aconst%2520liveTopRight%2520%253D%2520document.querySelector%28%2522%2523btn_top_right%2522%29%253B%250Aconst%2520toastBox%2520%253D%2520document.querySelector%28%2522%2523toast_box%2522%29%253B%250AliveLeadingBtn.addEventListener%28%27click%27%252C%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520toastBox.classList.add%28%2522toast_active_leading%2522%29%253B%250A%2520%2520%2520%2520toastBox.classList.add%28%2522toast_position%2522%29%253B%250A%2520%2520%2520%2520setTimeout%28%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520toastBox.classList.remove%28%2522toast_position%2522%29%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520toastBox.classList.remove%28%2522toast_active_leading%2522%29%253B%250A%2520%2520%2520%2520%257D%252C%25203000%29%250A%257D%29%250AliveTopRight.addEventListener%28%27click%27%252C%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520toastBox.classList.add%28%2522toast_active_top_right%2522%29%253B%250A%2520%2520%2520%2520toastBox.classList.add%28%2522toast_position%2522%29%253B%250A%2520%2520%2520%2520setTimeout%28%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520toastBox.classList.remove%28%2522toast_position%2522%29%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520toastBox.classList.remove%28%2522toast_active_top_right%2522%29%253B%250A%2520%2520%2520%2520%257D%252C%25203000%29%250A%257D%29"
-                    style="width: 561px; height: 462px; border:0; transform: scale(1); overflow:hidden;"
+                <iframe class="display_code"
+                    src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=material&wt=sharp&l=auto&width=680&ds=false&dsyoff=0px&dsblur=0px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Droid+Sans+Mono&fs=10px&lh=147%25&si=false&es=2x&wm=false&code=const%2520liveLeadingBtn%2520%253D%2520document.querySelector%28%2522%2523btn_leading%2522%29%253B%250Aconst%2520liveTopRight%2520%253D%2520document.querySelector%28%2522%2523btn_top_right%2522%29%253B%250Aconst%2520toastBox%2520%253D%2520document.querySelector%28%2522%2523toast_box%2522%29%253B%250A%250AliveLeadingBtn.addEventListener%28%27click%27%252C%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520toastBox.classList.add%28%2522toast_active_leading%2522%29%253B%250A%2520%2520%2520%2520toastBox.classList.add%28%2522toast_position%2522%29%253B%250A%250A%2520%2520%2520%2520setTimeout%28%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520toastBox.classList.remove%28%2522toast_position%2522%29%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520toastBox.classList.remove%28%2522toast_active_leading%2522%29%253B%250A%2520%2520%2520%2520%257D%252C%25203000%29%250A%257D%29%250A%250AliveTopRight.addEventListener%28%27click%27%252C%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520toastBox.classList.add%28%2522toast_active_top_right%2522%29%253B%250A%2520%2520%2520%2520toastBox.classList.add%28%2522toast_position%2522%29%253B%250A%250A%2520%2520%2520%2520setTimeout%28%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520toastBox.classList.remove%28%2522toast_position%2522%29%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520toastBox.classList.remove%28%2522toast_active_top_right%2522%29%253B%250A%2520%2520%2520%2520%257D%252C%25203000%29%250A%257D%29"
                     sandbox="allow-scripts allow-same-origin">
                 </iframe>
-            </div>
 
+                <div class="nav_bottom flex flex_justify_between">
+                    <a href="/components/rating/rating.html"> < Rating</a>
+                    <a href="/components/simplified-grid/simplified-grid.html">Simplified Grid ></a>
+                </div>
+
+            </div>
         </div>
+
     </div>
 
     <script src="/components/toast/toast.js"></script>

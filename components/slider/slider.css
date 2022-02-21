@@ -1,0 +1,13 @@
+.slider_container {
+    padding: 1rem;
+    margin: 1rem 0;
+    background-color: var(--line-color);
+    padding: 4rem;
+    display: inline;
+    text-align: center;
+}
+
+.slider_input {
+    margin-left: 0.5rem;
+    padding: 0.4rem 0;
+}
