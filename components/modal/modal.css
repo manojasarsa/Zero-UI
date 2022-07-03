@@ -10,15 +10,16 @@
 }
 
 .modal {
-    width: 50%;
+    width: 30%;
     height: 35%;
     row-gap: 1rem;
     border: 1px solid var(--primary-color);
     background-color: var(--line-color);
+    border-radius: 10px;
 }
 
 .modal_active {
-    z-index: 1;
+    z-index: 1000;
     display: flex;
 }
 
@@ -29,3 +30,7 @@
 .modal_btn_live {
     width: fit-content;
 }    
+
+.bg_modal_effect {
+    background-color: rgba(0, 0, 0, .7);
+}
