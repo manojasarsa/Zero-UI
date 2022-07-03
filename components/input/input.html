@@ -94,13 +94,15 @@
                 </p>
 
                 <div class="input_container flex flex_col">
-                    <label class="input_label">Email</label>
-                    <input class="input_box" type="email" placeholder="example@xyz.com" required />
-                </div>
-                
-                <div class="input_container flex flex_col">
-                    <label class="input_label">Textarea</label>
-                    <textarea class="input_box" cols="30" rows="3" placeholder="write your thoughts..."></textarea>
+                    <div class="flex flex_col">
+                        <label class="input_label">Email</label>
+                        <input class="input_box" type="email" placeholder="example@xyz.com" required />
+                    </div>
+                    
+                    <div class="flex flex_col">
+                        <label class="input_label">Textarea</label>
+                        <textarea class="input_box" cols="30" rows="3" placeholder="write your thoughts..."></textarea>
+                    </div>
                 </div>
 
                 <iframe class="display_code"
@@ -110,23 +112,22 @@
 
                 <!--Input with Login Validation -->
 
-                <h2 class="doc_main_head">Input with Login Validation</h2>
+                <h2 class="doc_main_head">Input with SignUp Validation</h2>
                 <p class="doc_main_desc">
-                    Input with Login Validation includes pre-build Login component. You can use this in your project to login users.
+                    Input with SignUp Validation includes pre-build SignUp component. You can use this in your project to signup users.
                 </p>
 
                 <div class="input_container flex flex_col flex_wrap">
                     <form class="input_field flex flex_col">
-                        <h2 class="input_heading">Login</h2>
+                        <h2 class="input_heading">SignUp</h2>
                         <label class="input_label">Full Name</label>
                         <input class="input_box" type="name" placeholder="Enter Name" required />
                         <label class="input_label">Email address</label>
                         <input class="input_box" type="email" placeholder="manoj@neog.camp" required />
                         <label class="input_label">Create Password</label>
-                        <input class="input_box" type="name" placeholder="***********" required />
+                        <input class="input_box" type="password" placeholder="***********" required />
                         <div>
-                            <input type="checkbox" class="input_checkbox"> 
-                            <p>Remember me</p>
+                            <input type="checkbox" class="input_checkbox"> Remember me
                         </div>
                         <p class="input_subheading"><a href="" class="link">Forgot your Password?</a> 
                         </p> 
@@ -152,10 +153,10 @@
                 <div class="input_container flex flex_col flex_wrap">
                     <form class="input_field flex flex_col">
                         <h2 class="input_heading">Login</h2>
-                        <label class="input_label">Email address</label>
+                        <label class="input_label">Email address*</label>
                         <input class="input_box" type="email" placeholder="manoj@neog.camp" required />
-                        <label class="input_label input_error">Create Password</label>
-                        <input class="input_box_error" type="name" placeholder="***********" required />
+                        <label class="input_label input_error">Password*</label>
+                        <input class="input_box_error" type="password" placeholder="***********" required />
                         <p class="input_error">Wrong Password. Try again.</p>
                         <button class="btn btn_secondary">Login</button>
                         <p class="input_subheading"><a href="" class="link">Create New Account ></a> </p>
