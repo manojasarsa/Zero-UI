@@ -76,3 +76,9 @@ textarea,
 select {
   font: inherit;
 }
+
+.active_component_link {
+    border-bottom: 1px solid var(--grey-color);
+    border-radius: 3px;
+    background-color: var(--shadow-color);
+}

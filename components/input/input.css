@@ -1,7 +1,7 @@
 .input_container {
-    padding: 0 1rem;
-    margin: 0 3rem 0 1rem;
-    box-shadow: 0px 0px 10px 10px var(--shadow-color);
+    padding: 1rem;
+    margin: 0 auto;
+    box-shadow: 0px 0px 1px 1px var(--line-color);
     min-height: 100px;
     width: 20rem;
 }
@@ -25,13 +25,15 @@
 }
 
 .input_checkbox {
-    width: 1.5rem;
-    height: 1.5rem;
-    margin-top: 1rem ;
+    width: 0.8rem;
+    height: 0.8rem;
+    margin-top: 1rem;
+    cursor: pointer;
 }
 
 .input_box_error {
-    padding: 1rem;
+    padding: 0.3rem 1rem;
+    border-radius: 5px;
     background-color: var(--shadow-color);
     border: 1px solid var(--alert-color);
     color: var(--alert-color);
